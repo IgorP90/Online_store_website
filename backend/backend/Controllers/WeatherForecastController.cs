@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using System.Web.Http.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -35,5 +37,10 @@ namespace backend.Controllers
             })
             .ToArray();
         }
+        /*[HttpGet]
+        public string Get()
+        {
+            return "Привет Angular!";
+        }*/
     }
 }

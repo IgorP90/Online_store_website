@@ -43,6 +43,16 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Swagger-Net": {
+              "target": "Package",
+              "version": "[8.4.19.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
