@@ -1,9 +1,7 @@
-﻿using backend.Models;
+﻿using backend.CRUD;
+using backend.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace backend.Controllers
 {
@@ -11,27 +9,28 @@ namespace backend.Controllers
     [Route("[controller]")]
     public class HomeController : ControllerBase
     {
+        private readonly Context context;
+
+        public HomeController(Context context) => this.context = context;
+
         [HttpGet]
-        [Route("product")]
-        public Product GetProduct()
+        public IEnumerable<Product> Get()
         {
-            return new Product
-            {
-                Id = 1234,
-                Name = "Apple",
-                Description = "Red apple",
-                Price = 1000
-            };
+            return new RequestHandler(context).Read();
         }
+
         [HttpGet]
-        [Route("category")]
-        public Category GetCategory()
+        [Route("{name}")]
+        public IEnumerable<Product> Get(string name)
         {
-            return new Category
-            {
-                Name = "Охота",
-                Image = "assets/images/Hunting.webp"
-            };
+            return new RequestHandler(context).Read(name);
+        }
+
+        [HttpPost]
+        [Route("{product}")]
+        public void Post(Product product) 
+        {
+            new RequestHandler(context).Create(product);
         }
     }
 }
