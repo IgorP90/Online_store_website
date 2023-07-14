@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AdminPageComponent } from './pages/admin-page/admin-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CategoryComponent } from './components/category/category.component';
-import { ProductComponent } from './components/product/product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CategoryComponent,
-    ProductComponent,
+    HomePageComponent,
+    AdminPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
