@@ -1,3 +1,29 @@
 <header><h1>a la Express</h1></header>
-<p>home-page works!</p>
-<a routerLink="/admin">Админ</a>
+
+<app-navigation></app-navigation>
+
+<main>
+    <div class="allCategories">
+        <h3>Все категории</h3>
+        <ul>
+            <li>sdsd</li>
+            <li>sdsd</li>
+            <li>sdsd</li>
+        </ul>
+    </div>
+
+    <div class="categories">
+        <h3>Категории</h3>
+        <app-category></app-category>
+    </div>
+
+    <div class="novelties">
+        <h3>Новинки</h3>
+        <app-item *ngFor="let product of products">{{products}}</app-item>
+    </div>
+
+    <div class="hitsOfSales">
+        <h3>Хиты продаж</h3>
+        <app-item></app-item>
+    </div>
+</main>

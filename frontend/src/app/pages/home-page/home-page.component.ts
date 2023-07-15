@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IProduct } from 'src/app/interfaces/IProduct';
 
 @Component({
   selector: 'app-home-page',
@@ -12,4 +13,5 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  products:IProduct[] = []
 }
