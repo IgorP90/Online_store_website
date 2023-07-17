@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+}
+.productFoto{
+    width: 500px;
+    height: 500px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.productName{
+    color: red;
+    margin-left: 10px;
+}
+.productDescription{
+    margin-left: 10px;
+}

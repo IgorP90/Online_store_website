@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -10,8 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CategoryComponent } from './components/category/category.component';
 import { ItemComponent } from './components/item/item.component';
-import { ItemPageComponent } from './pages/item-page/item-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,8 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     NavigationComponent,
     CategoryComponent,
     ItemComponent,
-    ItemPageComponent,
-    CartPageComponent
+    CartPageComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,

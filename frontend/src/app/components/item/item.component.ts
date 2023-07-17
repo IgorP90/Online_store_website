@@ -1,5 +1,4 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IProduct } from 'src/app/interfaces/IProduct';
 
 @Component({
@@ -9,16 +8,15 @@ import { IProduct } from 'src/app/interfaces/IProduct';
 })
 export class ItemComponent implements OnInit {
 
-  private readonly connectionString:string = 'https://localhost:44318/Home' // волшебная строка, перенести
+  constructor() { }
 
-  constructor(private http:HttpClient) { }
-
+  @Input() product:IProduct = {
+    name: '',
+    description: '',
+    price: 0,
+    image: ''
+  }
   ngOnInit(): void {
   }
-
-
-  product:any
-
-  gg = this.http.get<IProduct>(this.connectionString).subscribe(data=> this.product = data)
-      
+     
 }

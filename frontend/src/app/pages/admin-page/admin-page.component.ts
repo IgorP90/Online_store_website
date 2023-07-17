@@ -20,7 +20,8 @@ export class AdminPageComponent implements OnInit {
    product:IProduct= {
      name: "Cucumder",
      description: 'Green cucumber',
-     price: 98.99
+     price: 98.99,
+     image: ''
    }
 
   addProduct(product:IProduct){

@@ -12,9 +12,9 @@ namespace backend.CRUD
             return context.Products.ToList();
         }
 
-        public IEnumerable<Product> Read(string name)
+        public IEnumerable<Product> Read(int id)
         {
-            return context.Products.Where(n => n.Name == name).ToList();
+            return context.Products.Where(n => n.Id == id).ToList();
         }
 
         public void Create(Product product) 

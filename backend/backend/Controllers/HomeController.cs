@@ -20,10 +20,10 @@ namespace backend.Controllers
         }
 
         [HttpGet]
-        [Route("{name}")]
-        public IEnumerable<Product> Get(string name)
+        [Route("{id}")]
+        public IEnumerable<Product> Get(int id)
         {
-            return new RequestHandler(context).Read(name);
+            return new RequestHandler(context).Read(id);
         }
 
         [HttpPost]

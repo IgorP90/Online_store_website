@@ -19,7 +19,7 @@
 
     <div class="novelties">
         <h3>Новинки</h3>
-        <app-item *ngFor="let product of products">{{products}}</app-item>
+        <a><app-item *ngFor="let product of products" [product]="product"></app-item></a>
     </div>
 
     <div class="hitsOfSales">
