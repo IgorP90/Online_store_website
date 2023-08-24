@@ -1,12 +1,68 @@
 <app-navigation></app-navigation>
 <main>
-    <div class="productFoto">
-        <img [src]="product[0].image" [alt]="product[0].name">
+
+    <div class="leftBlock">
+        <div class="productPhoto">
+            <img [src]="product.image" [alt]="product.name">
+            <div class="productPhoto-allPhotos">
+            
+            </div>
+        </div>
+
+        <div class="rating">
+            <p>рейтинг {{product.rating}}</p>
+            <p>куплено {{product.numberOfOrders}}</p>
+        </div>
+
+        <div class="reviews">
+            <h3>Отзывы</h3>
+            <div class="stars">
+
+            </div>
+
+            <div class="reviewer_name">
+                <p>Вася Петров</p>
+            </div>
+
+            <div class="text_review">
+                <p>Отзывотзывотзывотзывотзывотзывотзывотзывотзывотзывотзывотзыв
+                    отзывотзывотзывотзывотзывотзывотзывотзывотзывотзывотзывотзыв
+                    отзывотзывотзывотзывотзыв</p>
+            </div>
+        </div>
+
+
     </div>
-    <div class="productName">
-        <h4>{{product[0].name}}</h4>
+    
+    <div class="centralBlock">
+
+        <div class="productName">
+            <h4>{{product.name}}</h4>
+        </div>
+
+        <div class="productDescription">
+            <p>{{product.description}}</p>
+        </div>
+
+        <!-- <app-item></app-item>
+        <app-item></app-item>
+        <app-item></app-item> -->
+    </div>   
+
+    <div class="rightBlock">
+        <p>Цена: {{product.price}} p.</p>
+        <button (click)="addInShoppingCart(1)">Добавить в корзину</button>
+        <button>Купить</button>
+
+        <!-- <app-item></app-item>
+        <app-item></app-item>
+        <app-item></app-item> -->
     </div>
-    <div class="productDescription">
-        <p>{{product[0].description}}</p>
-    </div>
+
+    <!-- <div class="screen">
+        <img src="#" alt="">
+    </div> -->
+    
 </main>
+
+    

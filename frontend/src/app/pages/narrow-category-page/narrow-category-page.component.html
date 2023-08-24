@@ -1,0 +1,10 @@
+
+<app-navigation></app-navigation>
+
+<app-narrow-categories [narrowCategories]="narrowCategories"></app-narrow-categories>
+
+<ul *ngFor="let product of products">
+    <li> 
+        <app-item [product]="product"></app-item>
+    </li>
+</ul>

@@ -1,2 +1,24 @@
+
 <app-navigation></app-navigation>
-<p>Cart</p>
+
+
+<main>
+    <h3>Корзина</h3>
+    <ul *ngFor="let shoppingCart of shoppingCarts">
+        <li>
+            <div class="cart">
+                <img class="productImage_image" [src]="shoppingCart.image" [alt]="shoppingCart.name">
+                <p>{{shoppingCart.id}}</p>
+                <p>{{shoppingCart.name}}</p>
+                <p>{{shoppingCart.price}}</p>
+
+                <button class="deleteCart_button">x</button>
+                <div class="amount">
+                    <button>-</button>
+                    <p>100</p>
+                    <button>+</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</main>

@@ -4,5 +4,7 @@ export interface IProduct{
     description:string
     price:number 
     image:string
-
+    numberOfOrders:number
+    rating:number
+    dateTime?: Date
 }

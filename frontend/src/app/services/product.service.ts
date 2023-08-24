@@ -14,12 +14,23 @@ export class ProductService{
 
     constructor(private http:HttpClient){}
 
-    getAllProduct():Observable<IProduct[]>{
-        return this.http.get<IProduct[]>(this.connectionString)
+    getAllProducts():Observable<IProduct[]>{
+        return this.http.get<IProduct[]>(this.connectionString + '/product')
     }
 
-    getProduct(id:number):Observable<IProduct[]>{
-        return this.http.get<IProduct[]>(this.connectionString + '/' + id)
+    getAllProductsByDate():Observable<IProduct[]>{
+        return this.http.get<IProduct[]>(this.connectionString + '/productByDate')
     }
-   
+
+    getAllProductsByRating():Observable<IProduct[]>{
+        return this.http.get<IProduct[]>(this.connectionString + '/productByRating')
+    }
+
+    getProductById(id:number):Observable<IProduct[]>{
+        return this.http.get<IProduct[]>(this.connectionString + '/productById/' + id)
+    }
+
+    getProductByName(name:string):Observable<IProduct[]>{
+        return this.http.get<IProduct[]>(this.connectionString + '/productByName/' + name)
+    }
 }

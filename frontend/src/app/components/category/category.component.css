@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h4{
+    margin-top: 20px;
+}
+
 .category{
     width: 300px;
     height: 300px;
@@ -14,7 +18,10 @@
 .category-image{
     width: 260px;
     height: 216px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto 20px auto;
 }
+
+.category-image img{
+    width: 260px;
+    height: 216px;
+} 

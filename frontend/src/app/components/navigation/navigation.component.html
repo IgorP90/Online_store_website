@@ -1,7 +1,19 @@
 <div class="navigation">
     <a routerLink="/admin">Админ</a>
     <a routerLink="/">Домой</a>
-    <input class="search_input" type="text" placeholder="введите запрос">
+
+    <div class="dd">
+         <input class="search_input" type="text" placeholder="введите запрос" #search_input (input)="fff(search_input.value)">
+        <div class="search_result">
+            <ul *ngFor="let product of products">
+                <a routerLink="/product/{{product.id}}"><li>{{product.name}}</li></a>
+            </ul>
+        </div>
+    </div>
+   
+    <!-- <button (click)="fff(search_input.value)">>></button> -->
+    
+    <output></output>
     <a routerLink="">Войти</a>
     <a routerLink="">Заказы</a>
     <a routerLink="/cart">Корзина</a>

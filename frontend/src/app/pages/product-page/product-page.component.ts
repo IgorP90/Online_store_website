@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { IProduct } from 'src/app/interfaces/IProduct';
+import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -9,14 +11,24 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class ProductPageComponent implements OnInit {
 
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService, private cartService:CartService, private route:ActivatedRoute) { }
 
-  product:IProduct[]=[]
+  product:IProduct= {
+  name:'',
+  description:'',
+  price: 0,
+  image:'',
+  numberOfOrders: 0,
+  rating: 0,
+  }
 
   ngOnInit(): void {
-    this.productService.getProduct(1).subscribe(data=>{
-      this.product= data
+    this.productService.getProductById(this.route.snapshot.params['id']).subscribe(data=>{
+      this.product = data[0]
     })
   }
 
+  addInShoppingCart(id:number){
+    this.cartService.addInShoppingCart(id).subscribe()
+  }
 }

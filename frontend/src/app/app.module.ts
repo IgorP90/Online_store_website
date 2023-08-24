@@ -11,6 +11,9 @@ import { CategoryComponent } from './components/category/category.component';
 import { ItemComponent } from './components/item/item.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NarrowCategoryPageComponent } from './pages/narrow-category-page/narrow-category-page.component';
+import { NarrowCategoriesComponent } from './components/narrow-categories/narrow-categories.component';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,16 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
     CategoryComponent,
     ItemComponent,
     CartPageComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    NarrowCategoryPageComponent,
+    NarrowCategoriesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

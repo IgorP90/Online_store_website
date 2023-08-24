@@ -3,27 +3,33 @@
 <app-navigation></app-navigation>
 
 <main>
-    <div class="allCategories">
-        <h3>Все категории</h3>
-        <ul>
-            <li>sdsd</li>
-            <li>sdsd</li>
-            <li>sdsd</li>
-        </ul>
+    <div class="left">
+        <app-narrow-categories [narrowCategories]="narrowCategories"></app-narrow-categories> 
     </div>
 
-    <div class="categories">
-        <h3>Категории</h3>
-        <app-category></app-category>
+    <div class="center">
+
+        <div class="banner">
+
+        </div>
+        <button (click)="event='left'"><<</button>
+        <button (click)="event='right'">>></button>
+        <div class="wideCategories">
+            <h3>Категории</h3>
+            <app-category [@general_category]="event" *ngFor="let category of wideCategories; let i=index" [category]="wideCategories[i]"></app-category>
+        </div>
+
+        <div class="novelties">
+            <h3>Новинки</h3>
+            <app-item *ngFor="let product of [0,1,2,3,4]; let i=index;" [product]="productsByDateTime[i]"></app-item>
+        </div>
     </div>
 
-    <div class="novelties">
-        <h3>Новинки</h3>
-        <a><app-item *ngFor="let product of products" [product]="product"></app-item></a>
+    <div class="right">
+        <div class="hitsOfSales">
+            <h3>Хиты продаж</h3>
+            <app-item *ngFor="let product of [0,1,2]; let i=index;" [product]="productsByRating[i]"></app-item>
+        </div>
     </div>
 
-    <div class="hitsOfSales">
-        <h3>Хиты продаж</h3>
-        <app-item></app-item>
-    </div>
 </main>

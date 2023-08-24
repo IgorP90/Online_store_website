@@ -14,8 +14,11 @@ export class ItemComponent implements OnInit {
     name: '',
     description: '',
     price: 0,
-    image: ''
+    image: '',
+    numberOfOrders: 0,
+    rating: 0
   }
+
   ngOnInit(): void {
   }
      

@@ -17,12 +17,7 @@ export class AdminPageComponent implements OnInit {
   ngOnInit(): void {
   } 
 
-   product:IProduct= {
-     name: "Cucumder",
-     description: 'Green cucumber',
-     price: 98.99,
-     image: ''
-   }
+   product:any
 
   addProduct(product:IProduct){
     try {
@@ -30,7 +25,6 @@ export class AdminPageComponent implements OnInit {
     } catch (error) {
       console.log(error)
     }
-      
   }
 
   getProduct(){
@@ -39,7 +33,6 @@ export class AdminPageComponent implements OnInit {
     } catch (error) {
       console.log(error)
     }
-    
   }
 }
 

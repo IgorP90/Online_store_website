@@ -10,8 +10,23 @@
     background-color: rgb(255, 0, 0, 0.02);
 }
 
+.dd{
+    position: relative;
+    width: 804px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .search_input{
     width: 800px;
     height: 50px;
     font-size:  20px;
+}
+
+.search_result{
+    position: absolute;
+    top: 70px;
+    width: 800px;
+    height: auto;
+    background-color: white;
 }

@@ -1,10 +1,8 @@
 ﻿namespace backend.Models
 {
-    public class Category
+    public class NarrowCategory
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public string Image { get; set; }
     }
 }
