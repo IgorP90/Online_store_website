@@ -1,10 +1,19 @@
 
 <app-navigation></app-navigation>
 
-<app-narrow-categories [narrowCategories]="narrowCategories"></app-narrow-categories>
+<main>
+    <div class="left">
+        <app-narrow-categories></app-narrow-categories>
+    </div>
 
-<ul *ngFor="let product of products">
-    <li> 
-        <app-item [product]="product"></app-item>
-    </li>
-</ul>
+    <div class="central">
+       <h3>Название категории</h3>
+
+        <ul *ngFor="let product of products">
+            <li> 
+                <app-item [product]="product"></app-item>
+            </li>
+        </ul> 
+    </div>
+    
+    

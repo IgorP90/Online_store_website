@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
   selector: 'app-narrow-categories',
@@ -7,11 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NarrowCategoriesComponent implements OnInit {
 
-  @Input() narrowCategories:any[] = []
+  narrowCategories:any[] = []
 
-  constructor() { }
+  constructor(private categoryService:CategoryService) { }
 
   ngOnInit(): void {
+    this.categoryService.getAllNarrowCategories().subscribe(data=>{
+      this.narrowCategories = data
+    })
   }
 
 }

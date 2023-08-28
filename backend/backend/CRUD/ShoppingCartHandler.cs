@@ -15,10 +15,9 @@ namespace backend.CRUD
         public void Post(int id)
         {
             IQueryable<int> res = context.Products.Where(n => n.Id == id).Select(n=>n.Id);
-
-
-                context.ShoppingСart.Add(new ShoppingСart {ProductId = id});
-                context.SaveChanges();
+                
+                //context.ShoppingСart.Add(new ShoppingСart {ProductId = id});
+                //context.SaveChanges();
         }
     }
 }

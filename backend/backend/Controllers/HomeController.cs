@@ -2,6 +2,7 @@
 using backend.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace backend.Controllers
 {
@@ -15,35 +16,35 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("product")]
-        public IEnumerable<Product> GetAllProducts()
+        public IQueryable<Product> GetAllProducts()
         {
             return new ProductHandler(context).Read();
         }
 
         [HttpGet]
         [Route("productByDate")]
-        public IQueryable<Product> GetAllProductsByDate()
+        public IEnumerable<Product> GetAllProductsByDate()
         {
-            return new ProductHandler(context).ReadByDataTime();
+            return new ProductHandler(context).ReadByDate();
         }
 
         [HttpGet]
         [Route("productByRating")]
-        public IQueryable<Product> GetAllProductsByRating()
+        public IEnumerable<Product> GetAllProductsByRating()
         {
             return new ProductHandler(context).ReadByRating();
         }
 
         [HttpGet]
         [Route("productById/{id}")]
-        public IQueryable<Product> GetProductById(int id)
+        public Product GetProductById(int id)
         {
             return new ProductHandler(context).Read(id);
         }
 
         [HttpGet]
         [Route("productbyName/{name}")]
-        public IQueryable<Product> GetProductByName(string name)
+        public IEnumerable<Product> GetProductByName(string name)
         {
             return new ProductHandler(context).Read(name);
         }
@@ -77,13 +78,20 @@ namespace backend.Controllers
         }
 
         [HttpGet]
+        [Route("narrow_category/{name}")]
+        public IEnumerable<NarrowCategory> GetAllNarrowCategories(string name)
+        {
+            return new NarrowCategoryHandler(context).Read(name);
+        }
+
+        [HttpGet]
         [Route("shopping_cart")]
         public IEnumerable<ShoppingСart> GetShoppingCart()
         {
             return new ShoppingCartHandler(context).Read();
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("shopping_cart/{id}")]
         public void PostShoppingCart(int id)
         {

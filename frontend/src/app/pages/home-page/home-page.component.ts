@@ -18,20 +18,13 @@ import {trigger, state, style, transition, animate} from '@angular/animations'
 })
 export class HomePageComponent implements OnInit {
 
-  products:IProduct[] = []
   productsByDateTime:IProduct[] = []
   productsByRating:IProduct[] = []
-  
   wideCategories:any[] = [] 
-  narrowCategories:any[] = []  
 
   constructor(private productService:ProductService, private categoryService:CategoryService) { }
 
   ngOnInit(): void {
-
-    this.productService.getAllProducts().subscribe(data=>{
-      this.products = data
-    })
 
     this.productService.getAllProductsByDate().subscribe(data=>{
       this.productsByDateTime = data
@@ -43,10 +36,6 @@ export class HomePageComponent implements OnInit {
 
     this.categoryService.getAllWideCategories().subscribe(data=>{
       this.wideCategories = data
-    })
-
-    this.categoryService.getAllNarrowCategories().subscribe(data=>{
-      this.narrowCategories = data
     })
   }
 

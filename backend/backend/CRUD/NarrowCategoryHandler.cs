@@ -11,5 +11,10 @@ namespace backend.CRUD
         {
             return context.NarrowCategories;
         }
+
+        public IEnumerable<NarrowCategory> Read(string name)
+        {
+            return context.NarrowCategories.Where(n=>n.Name == name).Take(10);
+        }
     }
 }

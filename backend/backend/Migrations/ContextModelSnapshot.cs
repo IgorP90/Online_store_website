@@ -22,6 +22,21 @@ namespace backend.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ProductWideCategory", b =>
+                {
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("WideCategoriesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductsId", "WideCategoriesId");
+
+                    b.HasIndex("WideCategoriesId");
+
+                    b.ToTable("ProductWideCategory");
+                });
+
             modelBuilder.Entity("backend.Models.NarrowCategory", b =>
                 {
                     b.Property<int>("Id")
@@ -41,19 +56,16 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Models.Order", b =>
                 {
-                    b.Property<int>("OrderId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("OrderStatus")
                         .HasColumnType("int");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId");
+                    b.HasKey("Id");
 
                     b.ToTable("Orders");
                 });
@@ -81,6 +93,9 @@ namespace backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("NarrowCategoryId")
+                        .HasColumnType("int");
+
                     b.Property<int>("NumberOfOrders")
                         .HasColumnType("int");
 
@@ -91,6 +106,8 @@ namespace backend.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("NarrowCategoryId");
 
                     b.ToTable("Products");
                 });
@@ -103,12 +120,10 @@ namespace backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Amount")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
 
                     b.ToTable("ShoppingСart");
                 });
@@ -134,15 +149,35 @@ namespace backend.Migrations
                     b.ToTable("WideCategories");
                 });
 
-            modelBuilder.Entity("backend.Models.ShoppingСart", b =>
+            modelBuilder.Entity("ProductWideCategory", b =>
                 {
-                    b.HasOne("backend.Models.Product", "Product")
+                    b.HasOne("backend.Models.Product", null)
                         .WithMany()
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Product");
+                    b.HasOne("backend.Models.WideCategory", null)
+                        .WithMany()
+                        .HasForeignKey("WideCategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("backend.Models.Product", b =>
+                {
+                    b.HasOne("backend.Models.NarrowCategory", "NarrowCategory")
+                        .WithMany("Products")
+                        .HasForeignKey("NarrowCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NarrowCategory");
+                });
+
+            modelBuilder.Entity("backend.Models.NarrowCategory", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

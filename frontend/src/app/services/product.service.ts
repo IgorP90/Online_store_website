@@ -26,8 +26,8 @@ export class ProductService{
         return this.http.get<IProduct[]>(this.connectionString + '/productByRating')
     }
 
-    getProductById(id:number):Observable<IProduct[]>{
-        return this.http.get<IProduct[]>(this.connectionString + '/productById/' + id)
+    getProductById(id:number):Observable<IProduct>{
+        return this.http.get<IProduct>(this.connectionString + '/productById/' + id)
     }
 
     getProductByName(name:string):Observable<IProduct[]>{

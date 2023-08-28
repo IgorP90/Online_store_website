@@ -19,12 +19,12 @@ export class ProductPageComponent implements OnInit {
   price: 0,
   image:'',
   numberOfOrders: 0,
-  rating: 0,
+  rating: 0
   }
 
   ngOnInit(): void {
     this.productService.getProductById(this.route.snapshot.params['id']).subscribe(data=>{
-      this.product = data[0]
+      this.product = data
     })
   }
 

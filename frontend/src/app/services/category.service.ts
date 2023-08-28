@@ -22,4 +22,8 @@ export class CategoryService{
     getAllNarrowCategories():Observable<any[]>{
         return this.http.get<any[]>(this.connectionString + '/narrow_category')
     }
+
+    getProductsByNarrowCategoryName(name:string):Observable<any[]>{
+        return this.http.get<any[]>(this.connectionString + '/narrow_category/' + name)
+    }
 }
