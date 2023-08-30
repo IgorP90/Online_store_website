@@ -19,7 +19,7 @@ export class ProductService{
     }
 
     getAllProductsByDate():Observable<IProduct[]>{
-        return this.http.get<IProduct[]>(this.connectionString + '/productByDate')
+        return this.http.get<IProduct[]>(`${this.connectionString}/productByDate`)
     }
 
     getAllProductsByRating():Observable<IProduct[]>{

@@ -35,6 +35,14 @@ namespace backend.CRUD
             return context.Products.OrderByDescending(n => n.Rating).Take(3);
         }
 
+        public IEnumerable<Product> ReadByNarrowCategory(string name)
+        {
+            int nm = context.NarrowCategories.Where(n => n.Name == name).Select(n=>n.Id).First();
+
+            return context.Products.Where(n => n.NarrowCategoryId == nm);
+            //return context.NarrowCategories.Where(n => n.Name == name).Take(10);
+        }
+
         public void Create(Product product) 
         {
             context.Add(product);

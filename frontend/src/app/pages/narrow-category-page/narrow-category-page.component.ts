@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { IProduct } from 'src/app/interfaces/IProduct';
 import { CategoryService } from 'src/app/services/category.service';
 
 @Component({
@@ -10,12 +11,13 @@ import { CategoryService } from 'src/app/services/category.service';
 export class NarrowCategoryPageComponent implements OnInit {
 
   narrowCategories:any[] = []
-  products:any[] = []
+  products:IProduct[] = []
 
   constructor(private categoryService:CategoryService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.categoryService.getProductsByNarrowCategoryName(this.route.snapshot.params['name']).subscribe(data=>{
+      console.log(this.route.snapshot.params['name'])
       this.products = data[0].products
     })
 

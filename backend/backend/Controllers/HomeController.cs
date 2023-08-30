@@ -49,6 +49,13 @@ namespace backend.Controllers
             return new ProductHandler(context).Read(name);
         }
 
+        [HttpGet]
+        [Route("productsByNarrowCategory/{categoryName}")]
+        public IEnumerable<Product> GetAllNarrowCategories(string categoryName)
+        {
+            return new ProductHandler(context).ReadByNarrowCategory(categoryName);
+        }
+
         [HttpPost]
         [Route("addProduct/{id}")]
         public void PostProduct(Product product) 
@@ -75,13 +82,6 @@ namespace backend.Controllers
         public IEnumerable<NarrowCategory> GetAllNarrowCategories()
         {
             return new NarrowCategoryHandler(context).Read();
-        }
-
-        [HttpGet]
-        [Route("narrow_category/{name}")]
-        public IEnumerable<NarrowCategory> GetAllNarrowCategories(string name)
-        {
-            return new NarrowCategoryHandler(context).Read(name);
         }
 
         [HttpGet]

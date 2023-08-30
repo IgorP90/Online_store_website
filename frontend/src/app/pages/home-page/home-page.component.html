@@ -21,14 +21,14 @@
 
         <div class="novelties">
             <h3>Новинки</h3>
-            <app-item *ngFor="let product of [0,1,2,3,4]; let i=index;" [product]="productsByDateTime[i]"></app-item>
+            <app-item *ngFor="let product of [0, 1, 2, 3, 4]; let i=index;" [product]="productsByDateTime[i]"></app-item>
         </div>
     </div>
 
     <div class="right">
         <div class="hitsOfSales">
             <h3>Хиты продаж</h3>
-            <app-item *ngFor="let product of [0,1,2]; let i=index;" [product]="productsByRating[i]"></app-item>
+            <app-item *ngFor="let product of [0, 1 , 2]; let i=index;" [product]="productsByRating[i]"></app-item>
         </div>
     </div>
 </main>
