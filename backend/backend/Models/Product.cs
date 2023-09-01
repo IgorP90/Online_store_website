@@ -19,7 +19,8 @@ namespace backend.Models
         public int NarrowCategoryId { get; set; }
         public NarrowCategory NarrowCategory { get; set; }
 
-        public List<WideCategory> WideCategories { get; set; } = new List<WideCategory>();
+        public ShoppingСart ShoppingCart { get; set; }
 
+        public List<WideCategory> WideCategories { get; set; } = new List<WideCategory>();
     }
 }

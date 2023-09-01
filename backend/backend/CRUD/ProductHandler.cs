@@ -1,5 +1,6 @@
 ﻿using backend.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace backend.CRUD
@@ -37,10 +38,12 @@ namespace backend.CRUD
 
         public IEnumerable<Product> ReadByNarrowCategory(string name)
         {
-            int nm = context.NarrowCategories.Where(n => n.Name == name).Select(n=>n.Id).First();
+            return context.Products.Where(n => n.NarrowCategory.Name == name);
+        }
 
-            return context.Products.Where(n => n.NarrowCategoryId == nm);
-            //return context.NarrowCategories.Where(n => n.Name == name).Take(10);
+        public IEnumerable<Product> ReadByWideCategory(string name)
+        {
+            return context.Products.Include(n => n.WideCategories);
         }
 
         public void Create(Product product) 

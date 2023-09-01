@@ -16,12 +16,18 @@
         
         <div class="wideCategories">
             <h3>Категории</h3>
-            <app-category [@general_category]="event" *ngFor="let category of wideCategories; let i=index" [category]="wideCategories[i]"></app-category>
+            <div class="wideCategories-app-category">
+                <app-category [@general_category]="event" *ngFor="let category of wideCategories; let i=index" [category]="wideCategories[i]"></app-category>
+            </div>
+            
         </div>
 
         <div class="novelties">
             <h3>Новинки</h3>
-            <app-item *ngFor="let product of [0, 1, 2, 3, 4]; let i=index;" [product]="productsByDateTime[i]"></app-item>
+            <div class="novelties-app-item">
+                <app-item *ngFor="let product of [0, 1, 2, 3, 4]; let i=index;" [product]="productsByDateTime[i]"></app-item>
+            </div> 
+            
         </div>
     </div>
 

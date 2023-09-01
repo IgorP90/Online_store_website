@@ -114,16 +114,13 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Models.ShoppingСart", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("Amount")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("ProductId");
 
                     b.ToTable("ShoppingСart");
                 });
@@ -175,9 +172,26 @@ namespace backend.Migrations
                     b.Navigation("NarrowCategory");
                 });
 
+            modelBuilder.Entity("backend.Models.ShoppingСart", b =>
+                {
+                    b.HasOne("backend.Models.Product", "Product")
+                        .WithOne("ShoppingCart")
+                        .HasForeignKey("backend.Models.ShoppingСart", "ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("backend.Models.NarrowCategory", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("backend.Models.Product", b =>
+                {
+                    b.Navigation("ShoppingCart")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

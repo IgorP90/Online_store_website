@@ -19,7 +19,7 @@ export class CartService{
     }
 
     addInShoppingCart(id:number){
-        return this.http.post<IProduct>(this.connectionString + '/shopping_cart/id',id)
+        return this.http.post(`${this.connectionString}/shopping_cart/id`, id)
     }
 
 

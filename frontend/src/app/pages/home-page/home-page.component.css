@@ -33,14 +33,22 @@ main{
 }
 
 .wideCategories{
-    display: flex;
     margin-top: 50px;
 }
-.novelties{
+
+.wideCategories-app-category{
+    margin-left: 50px;
     display: flex;
+}
+
+.novelties{
     width: 600px;
     height: 200px;
     margin-top: 50px;
+}
+
+.novelties-app-item{
+    display: flex;
 }
 
 .right{
@@ -52,4 +60,14 @@ main{
     width: 200px;
     height: 600px;
     margin-left: 100px;
+}
+
+app-category,
+app-item{
+    margin-left: 30px;
+}
+
+
+h3{
+    text-align: center;
 }

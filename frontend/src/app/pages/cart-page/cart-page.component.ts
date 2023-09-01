@@ -9,7 +9,7 @@ import { CartService } from 'src/app/services/cart.service';
 })
 export class CartPageComponent implements OnInit {
 
-  shoppingCarts:IProduct[] = []
+  shoppingCarts:any[] = []
 
   constructor(private cartService:CartService) { }
 

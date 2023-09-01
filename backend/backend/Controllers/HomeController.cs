@@ -71,10 +71,10 @@ namespace backend.Controllers
         }
 
         [HttpGet]
-        [Route("wide_category/{name}")]
-        public IEnumerable<WideCategory> GetWideCategoryByName(string name)
+        [Route("productsByWideCategory/{name}")]
+        public IEnumerable<Product> GetWideCategoryByName(string name)
         {
-            return new WideCategoryHandler(context).Read(name);
+            return new ProductHandler(context).ReadByWideCategory(name);
         }
 
         [HttpGet]
