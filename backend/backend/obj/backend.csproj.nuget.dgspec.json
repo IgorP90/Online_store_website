@@ -1,33 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "E:\\сайты\\Online_store_website\\backend\\backend\\backend.csproj": {}
+    "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\backend.csproj": {}
   },
   "projects": {
-    "E:\\сайты\\Online_store_website\\backend\\backend\\backend.csproj": {
+    "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\сайты\\Online_store_website\\backend\\backend\\backend.csproj",
+        "projectUniqueName": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "E:\\сайты\\Online_store_website\\backend\\backend\\backend.csproj",
-        "packagesPath": "C:\\Users\\Igor\\.nuget\\packages\\",
-        "outputPath": "E:\\сайты\\Online_store_website\\backend\\backend\\obj\\",
+        "projectPath": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\backend.csproj",
+        "packagesPath": "C:\\Users\\MyHomeComputer\\.nuget\\packages\\",
+        "outputPath": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Igor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MyHomeComputer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,11 +35,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -75,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
