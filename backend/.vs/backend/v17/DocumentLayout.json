@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "G:\\MyVisualStudio\\Online_store_website\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20240820174845_migration_5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20240820174845_migration_5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20230901135716_migration_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20230901135716_migration_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20230901145249_migration_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20230901145249_migration_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\shoppingcarthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\shoppingcarthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\shopping\u0441art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\shopping\u0441art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\producthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\producthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,92 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "backend\\Properties\\launchSettings.json",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "backend\\Properties\\launchSettings.json",
+              "DocumentIndex": 1,
+              "Title": "20230901135716_migration_3.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901135716_migration_3.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20230901135716_migration_3.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901135716_migration_3.cs",
+              "RelativeToolTip": "backend\\Migrations\\20230901135716_migration_3.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-18T13:28:55.134Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:50:06.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240820174845_migration_5.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20240820174845_migration_5.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20240820174845_migration_5.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20240820174845_migration_5.cs",
+              "RelativeToolTip": "backend\\Migrations\\20240820174845_migration_5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:48:45.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ShoppingCartHandler.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ShoppingCartHandler.cs",
-              "RelativeDocumentMoniker": "backend\\CRUD\\ShoppingCartHandler.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ShoppingCartHandler.cs",
-              "RelativeToolTip": "backend\\CRUD\\ShoppingCartHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABjAAAA",
+              "Title": "20230901145249_migration_4.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901145249_migration_4.cs",
+              "RelativeDocumentMoniker": "backend\\Migrations\\20230901145249_migration_4.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901145249_migration_4.cs",
+              "RelativeToolTip": "backend\\Migrations\\20230901145249_migration_4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:47.743Z"
+              "WhenOpened": "2024-08-20T16:32:01.156Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Shopping\u0421art.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Shopping\u0421art.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Shopping\u0421art.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Shopping\u0421art.cs",
-              "RelativeToolTip": "backend\\Models\\Shopping\u0421art.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAApAAAA",
+              "Title": "Context.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Context.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
+              "RelativeToolTip": "backend\\Models\\Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:48.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Product.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Product.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
-              "RelativeToolTip": "backend\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:48.084Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:48.089Z"
+              "WhenOpened": "2024-08-18T16:31:31.566Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ProductHandler.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ProductHandler.cs",
-              "RelativeDocumentMoniker": "backend\\CRUD\\ProductHandler.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ProductHandler.cs",
-              "RelativeToolTip": "backend\\CRUD\\ProductHandler.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:48.094Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\HomeController.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeToolTip": "backend\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGMAAAAAAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T13:06:48.098Z",
+              "WhenOpened": "2024-08-18T15:17:44.401Z",
               "EditorCaption": ""
             }
           ]
