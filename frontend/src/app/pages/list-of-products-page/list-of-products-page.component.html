@@ -1,0 +1,20 @@
+<app-navigation></app-navigation> 
+<main> 
+    <h1>list of products page works!</h1>
+
+    <div class="leftBlock">
+
+    </div>
+
+    <div class="centralBlock">
+        <ul *ngFor="let product of products">
+            <a routerLink="/product/{{product.id}}">
+                <li>{{product.name}}</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="rightBlock">
+        
+    </div>
+</main>

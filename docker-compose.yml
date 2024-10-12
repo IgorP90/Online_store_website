@@ -1,14 +1,32 @@
-version: '3.0'
-
+version: '3.9'
 services:
-  mysql:
-    image: mysql
-    restart: always
+  sql-server-express:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: docker-sql-server-express
     environment:
-      MYSQL_ROOT_PASSWORD: 12345
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=1234
+  dockersqlserver:
+    image: ${DOCKER_REGISTRY-}dockersqlserver
+    build:
+      context: .
+      dockerfile: DockerSqlServer/Dockerfile
+    depends_on:
+      - localhost
 
-  backend:
-    build: ./backend
+#     ports:
+#       - "1433:1433"
 
-  frontend: 
-    build: ./frontend
+
+      
+  
+  # mssql:
+  #   build: ./data
+
+  # backend:
+  #   build: ./backend
+
+  # frontend: 
+  #   build: ./frontend
+  
+  # docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=yourStrong(!)Password" -e "MSSQL_PID=Evaluation" -p 1433:1433  --name sqlpreview --hostname sqlpreview -d mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04

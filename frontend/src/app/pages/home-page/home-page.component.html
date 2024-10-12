@@ -11,12 +11,14 @@
 
         <div class="banner"></div>
 
+        <button (click)="event='left'"><<</button>
+        <button (click)="event='right'">>></button>
+
         <div class="wideCategories">
             <h3>Категории</h3>
             <div class="wideCategories-app-category">
-                <app-wide-category></app-wide-category>
-            </div>
-            
+                <app-wide-category *ngFor="let wideCategory of wideCategories; let i=index" [wideCategory]="wideCategories[i]"></app-wide-category>
+            </div>     
         </div>
 
         <div class="novelties">

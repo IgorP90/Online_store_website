@@ -12,8 +12,8 @@ using backend.Models;
 namespace backend.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240820174845_migration_5")]
-    partial class migration_5
+    [Migration("20241011191836_migration_4")]
+    partial class migration_4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -126,6 +126,23 @@ namespace backend.Migrations
                     b.HasKey("ProductId");
 
                     b.ToTable("ShoppingСart");
+                });
+
+            modelBuilder.Entity("backend.Models.Test", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Test");
                 });
 
             modelBuilder.Entity("backend.Models.WideCategory", b =>

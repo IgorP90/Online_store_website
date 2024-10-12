@@ -9,18 +9,27 @@
       </div>
   </a>
 
+  <div class="dd">
+    <input class="search_input" type="text" placeholder="введите запрос" #search_input (input)="fff(search_input.value)">
+   <div class="search_result">
+       <ul *ngFor="let product of products">
+           <a routerLink="/product/{{product.id}}"><li>{{product.name}}</li></a>
+       </ul>
+   </div>
+</div>
+
   <a routerLink="*">
-   <div class="sign_in">
-       <img src="../assets/images/5f806320ff6f95376aa7b0038738129d.jpg" alt="sign_in_img">
-       <p>Войти</p>
-   </div>      
+    <div class="sign_in">
+        <img src="../assets/images/5f806320ff6f95376aa7b0038738129d.jpg" alt="sign_in_img">
+        <p>Войти</p>
+    </div>      
 </a>
 
 <a routerLink="*">
-   <div class="sign_in">
-       <img src="../assets/images/auditorskaya_proverka.webp" alt="orders_img">
-       <p>Заказы</p>
-   </div>   
+    <div class="sign_in">
+        <img src="../assets/images/auditorskaya_proverka.webp" alt="orders_img">
+        <p>Заказы</p>
+    </div>   
 </a>
 
 <a routerLink="/cart">
@@ -29,5 +38,4 @@
        <p>Корзина</p>
    </div>   
 </a>
-<img src="../assets/images/5f806320ff6f95376aa7b0038738129d.jpg" alt="sign_in_img">
 </div>

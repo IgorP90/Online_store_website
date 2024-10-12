@@ -74,3 +74,7 @@ G:\MyVisualStudio\Online_store_website\backend\backend\obj\Debug\net8.0\refint\b
 G:\MyVisualStudio\Online_store_website\backend\backend\obj\Debug\net8.0\backend.pdb
 G:\MyVisualStudio\Online_store_website\backend\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 G:\MyVisualStudio\Online_store_website\backend\backend\obj\Debug\net8.0\ref\backend.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\JSONs\NarrowCategories.json
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\JSONs\Test.json
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\JSONs\Product.json
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\JSONs\WideCategories.json

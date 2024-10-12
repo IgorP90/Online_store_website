@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "G:\\MyVisualStudio\\Online_store_website\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20240820174845_migration_5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20240820174845_migration_5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20230901135716_migration_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20230901135716_migration_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\migrations\\20230901145249_migration_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\migrations\\20230901145249_migration_4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\widecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\widecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\jsons\\widecategories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\jsons\\widecategories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\producthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\producthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,73 +49,129 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 247,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20230901135716_migration_3.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901135716_migration_3.cs",
-              "RelativeDocumentMoniker": "backend\\Migrations\\20230901135716_migration_3.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901135716_migration_3.cs",
-              "RelativeToolTip": "backend\\Migrations\\20230901135716_migration_3.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "ProductHandler.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ProductHandler.cs",
+              "RelativeDocumentMoniker": "backend\\CRUD\\ProductHandler.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\ProductHandler.cs",
+              "RelativeToolTip": "backend\\CRUD\\ProductHandler.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T17:50:06.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T21:32:22.414Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20240820174845_migration_5.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20240820174845_migration_5.cs",
-              "RelativeDocumentMoniker": "backend\\Migrations\\20240820174845_migration_5.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20240820174845_migration_5.cs",
-              "RelativeToolTip": "backend\\Migrations\\20240820174845_migration_5.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Initializer.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Initializer.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Initializer.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Initializer.cs",
+              "RelativeToolTip": "backend\\Models\\Initializer.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T17:48:45.511Z",
+              "WhenOpened": "2024-10-11T19:31:58.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20230901145249_migration_4.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901145249_migration_4.cs",
-              "RelativeDocumentMoniker": "backend\\Migrations\\20230901145249_migration_4.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Migrations\\20230901145249_migration_4.cs",
-              "RelativeToolTip": "backend\\Migrations\\20230901145249_migration_4.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T16:32:01.156Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "WideCategories.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
+              "RelativeDocumentMoniker": "backend\\JSONs\\WideCategories.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
+              "RelativeToolTip": "backend\\JSONs\\WideCategories.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T19:29:25.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Context.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Context.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
-              "RelativeToolTip": "backend\\Models\\Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Title": "Product.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
+              "RelativeDocumentMoniker": "backend\\JSONs\\Product.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
+              "RelativeToolTip": "backend\\JSONs\\Product.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T19:29:05.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NarrowCategory.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\NarrowCategory.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\NarrowCategory.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\NarrowCategory.cs",
+              "RelativeToolTip": "backend\\Models\\NarrowCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T16:31:31.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T18:33:35.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "WideCategory.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\WideCategory.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\WideCategory.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\WideCategory.cs",
+              "RelativeToolTip": "backend\\Models\\WideCategory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T18:01:07.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Product.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
+              "RelativeToolTip": "backend\\Models\\Product.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:49:48.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\HomeController.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeToolTip": "backend\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwB0AAAAAAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAswEcAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T15:17:44.401Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T17:45:41.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Create.cs",
+              "RelativeDocumentMoniker": "backend\\CRUD\\Create.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Create.cs",
+              "RelativeToolTip": "backend\\CRUD\\Create.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T20:06:13.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Read.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Read.cs",
+              "RelativeDocumentMoniker": "backend\\CRUD\\Read.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Read.cs",
+              "RelativeToolTip": "backend\\CRUD\\Read.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAkwCkAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T20:07:20.832Z"
             }
           ]
         }

@@ -1,0 +1,111 @@
+[
+  {
+    "Id": 0,
+    "Name": "Путинка",
+    "Description": "Поддержка на 97.8%",
+    "Price": 100,
+    "Image": "assets/images/Putinka.jpg",
+    "NumberOfOrders": 150048128,
+    "Rating": 5,
+    "NarrowCategoryId": 1,
+
+    "wideCategories": [
+      {
+        "id": 1,
+        "name": "string",
+        "image": "string",
+        "products": [
+          "string"
+        ]
+      }
+    ]
+  },
+
+  {
+    "Id": 0,
+    "Name": "Квадрокоптер",
+    "Description": "На нем можно не только полетать, но и что нибудь взорвать",
+    "Price": 75020,
+    "Image": "assets/images/drone.jpeg",
+    "NumberOfOrders": 1059410,
+    "Rating": 4,
+    "NarrowCategoryId": 3,
+
+    "wideCategories": [
+      {
+        "id": 2,
+        "name": "string",
+        "image": "string",
+        "products": [
+          "string"
+        ]
+      }
+    ]
+  },
+
+  {
+    "Id": 0,
+    "Name": "Китайский фейверк",
+    "Description": "Огонь, краски, и чьи то пальцы",
+    "Price": 2199,
+    "Image": "assets/images/466-Siermeter.jpg",
+    "NumberOfOrders": 559860,
+    "Rating": 2,
+    "NarrowCategoryId": 2,
+
+    "wideCategories": [
+      {
+        "id": 1,
+        "name": "string",
+        "image": "string",
+        "products": [
+          "string"
+        ]
+      }
+    ]
+  },
+
+  {
+    "Id": 0,
+    "Name": "Yamaha YZF-R1",
+    "Description": "Реактивный истребитель на двух колёсах",
+    "Price": 1590000,
+    "Image": "assets/images/bikes033.jpg",
+    "NumberOfOrders": 95,
+    "Rating": 5,
+    "NarrowCategoryId": 4,
+
+    "wideCategories": [
+      {
+        "id": 1,
+        "name": "string",
+        "image": "string",
+        "products": [
+          "string"
+        ]
+      }
+    ]
+  },
+
+  {
+    "Id": 0,
+    "Name": "Электроудочка",
+    "Description": "Шарахнет так шарахнет",
+    "Price": 3100,
+    "Image": "assets/images/38b9.jpg",
+    "NumberOfOrders": 97850,
+    "Rating": 3,
+    "NarrowCategoryId": 3,
+
+    "wideCategories": [
+      {
+        "id": 3,
+        "name": "string",
+        "image": "string",
+        "products": [
+          "string"
+        ]
+      }
+    ]
+  }
+]

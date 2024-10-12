@@ -125,6 +125,23 @@ namespace backend.Migrations
                     b.ToTable("ShoppingСart");
                 });
 
+            modelBuilder.Entity("backend.Models.Test", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Test");
+                });
+
             modelBuilder.Entity("backend.Models.WideCategory", b =>
                 {
                     b.Property<int>("Id")

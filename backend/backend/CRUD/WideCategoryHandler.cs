@@ -26,5 +26,11 @@ namespace backend.CRUD
                 context.SaveChanges();
             }
         }
+
+        public void Test_1(Test test)
+        {
+            context.Add(test);
+            context.SaveChanges();
+        }
     }
 }

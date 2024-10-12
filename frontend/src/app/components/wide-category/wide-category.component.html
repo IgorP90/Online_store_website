@@ -1,9 +1,21 @@
 Wide-Category work
-<!-- <a routerLink="/wide_category/{{category.name}}">
+
+<!-- <div class="wideCategories">
+    <h3>Категории</h3>
+
+    <ul *ngFor="let wideCategory of wideCategories">
+        <a routerLink="/products/{{wideCategory.name}}">
+            <li>{{wideCategory.name}}</li>
+        </a>     
+    </ul>   
+    
+</div> -->
+
+<a routerLink="/products/{{wideCategory.name}}">
     <div class="category">
-        <h4>{{category.name}}</h4>
+        <h4>{{wideCategory.name}}</h4>
         <div class="category-image">
-            <img [src]="category.image" [alt]="category.name">
+            <img [src]="wideCategory.image" [alt]="wideCategory.name">
         </div>
     </div>      
-</a> -->
+</a>

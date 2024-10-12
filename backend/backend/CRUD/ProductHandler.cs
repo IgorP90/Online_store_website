@@ -41,10 +41,10 @@ namespace backend.CRUD
             return context.Products.Where(n => n.NarrowCategory.Name == name);
         }
 
-        public IEnumerable<Product> ReadByWideCategory(string name)
+        /*public IEnumerable<Product> ReadByWideCategory(string name)
         {
             return context.Products.Include(n => n.WideCategories);
-        }
+        }*/
 
         public void Create(Product product) 
         {

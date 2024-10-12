@@ -13,7 +13,7 @@ import { NarrowCategoriesComponent } from './components/narrow-categories/narrow
     NavigationComponent, 
     WideCategoryComponent, 
     ProductComponent, 
-    NarrowCategoriesComponent ],
+    NarrowCategoriesComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

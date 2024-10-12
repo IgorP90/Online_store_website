@@ -11,5 +11,10 @@ namespace backend.CRUD
         {
             return context.NarrowCategories;
         }
+        public void Create(NarrowCategory narrowCategory)
+        {
+            context.Add(narrowCategory);
+            context.SaveChanges();
+        }
     }
 }
