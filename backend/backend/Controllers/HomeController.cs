@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.Json;
+using Confluent.Kafka;
 
 namespace backend.Controllers
 {

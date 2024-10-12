@@ -39,8 +39,9 @@ namespace backend.CRUD
 
         public IEnumerable<T> ReadRowByWideCategory<T>(string name) where T : class, IWideCategory
         {
-            return context.Set<T>().Include(q => q.WideCategories).FirstOrDefault(w=>w.WideCategories)
+            //return context.Set<T>().Include(q => q.WideCategories).FirstOrDefault(w=>w.WideCategories)
             //return context.Set<T>().Where(n => n.WideCategories.Name == name);
+            return null;
         }
     }
 }

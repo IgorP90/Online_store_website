@@ -1,5 +1,6 @@
 using backend.CRUD;
 using backend.Models;
+using Confluent.Kafka;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -33,7 +34,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-WebApplication app = builder.Build();  
+ProducerConfig producerConfig = new ProducerConfig
+{
+    BootstrapServers = "host1:9092"
+};
+
+IProducer<Null, string> producer = new ProducerBuilder<Null, string>(producerConfig).Build();
+
+WebApplication app = builder.Build();
+
+//builder.Services.AddScoped<IProducer, String>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

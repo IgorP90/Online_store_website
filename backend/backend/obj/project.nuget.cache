@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hvPLUKkWQ/4=",
+  "dgSpecHash": "ebvnKBVCBzQ=",
   "success": true,
   "projectFilePath": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\MyHomeComputer\\.nuget\\packages\\confluent.kafka\\2.6.0\\confluent.kafka.2.6.0.nupkg.sha512",
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\MyHomeComputer\\.nuget\\packages\\librdkafka.redist\\2.6.0\\librdkafka.redist.2.6.0.nupkg.sha512",
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MyHomeComputer\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
