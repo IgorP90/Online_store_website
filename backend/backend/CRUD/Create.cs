@@ -1,4 +1,6 @@
 ﻿using backend.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 
 namespace backend.CRUD
 {
@@ -10,8 +12,17 @@ namespace backend.CRUD
 
         public void CreateRow <T> (T model) where T : class
         {
-            context.Add(model);
-            context.SaveChanges();
+            try
+            {
+                context.Add(model);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+               
+            }
+            
         }
     }
 }

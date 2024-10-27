@@ -28,4 +28,8 @@ export class CategoryService {
     getProductsByWideCategoryName(categoryName:string):Observable<any[]>{
         return this.http.get<any[]>(`${this.connectionString}/productsByWideCategory/${categoryName}`)
     }
+
+    getProductsByCategoryName(categoryName:string):Observable<any[]>{
+        return this.http.get<any[]>(this.connectionString + '/productsByNarrowCategory/' + categoryName) //-
+    }
 }

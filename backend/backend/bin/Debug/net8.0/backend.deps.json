@@ -9,6 +9,7 @@
       "backend/1.0.0": {
         "dependencies": {
           "Confluent.Kafka": "2.6.0",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.8",
           "Swashbuckle.AspNetCore": "6.2.3"

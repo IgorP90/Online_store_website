@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text.Json;
 using Confluent.Kafka;
+using Microsoft.IdentityModel.Tokens;
 
 namespace backend.Controllers
 {
@@ -26,23 +27,22 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("productById/{id}")]
-        public Product GetProductById(int id)
+        public async Task<ActionResult<Product>> GetProductById(int id)
         {
-            return new Read(context).ReadRow<Product>(id).First();
+            Product product = await new Read(context).ReadRow<Product>(id);
+
+            if (product.Id == id) return Ok(product);
+            else return BadRequest("Not Found");
         }
 
         [HttpGet]
         [Route("productByName/{name}")]
-        public Product GetProductByName(string name)
+        public ActionResult<IEnumerable<Product>> GetProductByName(string name)
         {
-            try
-            {
-                return new Read(context).ReadRow<Product>(name).First();
-            }
-            catch (Exception)
-            {
-                return null;
-            }    
+            IEnumerable<Product> products = new Read(context).ReadRow<Product>(name);
+
+            if (products.Any()) return Ok(products);
+            else return BadRequest("Not Found");   
         }
 
         [HttpGet]
@@ -80,91 +80,62 @@ namespace backend.Controllers
             new Update(context).UpdateRow(product);
         }
 
+        [HttpDelete]
+        [Route("delete_Product")]
+        public void Delete(int id)
+        {
+            new Delete(context).DeleteRow<Product>(id);    
+        }
+
         #region //--------------------------------------------------------------------
 
         /*[HttpGet]
         [Route("product")]
-        public IQueryable<Product> GetAllProducts()
-        {
-            return new ProductHandler(context).Read();
-        }
+        public IQueryable<Product> GetAllProducts()      
 
         [HttpGet]
         [Route("productByDate")]
-        public IEnumerable<Product> GetAllProductsByDate()
-        {
-            return new ProductHandler(context).ReadByDate();
-        }
+        public IEnumerable<Product> GetAllProductsByDate()       
 
         [HttpGet]
         [Route("productByRating")]
-        public IEnumerable<Product> GetAllProductsByRating()
-        {
-            return new ProductHandler(context).ReadByRating();
-        }
+        public IEnumerable<Product> GetAllProductsByRating()     
 
         [HttpGet]
         [Route("productById/{id}")]
-        public Product GetProductById(int id)
-        {
-            return new ProductHandler(context).Read(id);
-        }
+        public Product GetProductById(int id)      
 
         [HttpGet]
         [Route("productbyName/{name}")]
-        public IEnumerable<Product> GetProductByName(string name)
-        {
-            return new ProductHandler(context).Read(name);
-        }
+        public IEnumerable<Product> GetProductByName(string name)       
 
         [HttpGet]
         [Route("productsByNarrowCategory/{categoryName}")]
         public IEnumerable<Product> GetAllNarrowCategories(string categoryName)
-        {
-            return new ProductHandler(context).ReadByNarrowCategory(categoryName);
-        }
 
         [HttpPost]
         [Route("addProduct/{id}")]
-        public void PostProduct(Product product)
-        {
-            new ProductHandler(context).Create(product);
-        }
+        public void PostProduct(Product product)      
 
         [HttpGet]
         [Route("wide_category")]
         public IEnumerable<WideCategory> GetAllWideCategories()
-        {
-            return new WideCategoryHandler(context).Read();
-        }
-
+ 
         [HttpGet]
         [Route("productsByWideCategory/{name}")]
         public IEnumerable<Product> GetWideCategoryByName(string name)
-        {
-            return new ProductHandler(context).ReadByWideCategory(name);
-        }
 
         [HttpGet]
         [Route("narrow_category")]
         public IEnumerable<NarrowCategory> GetAllNarrowCategories()
-        {
-            return new NarrowCategoryHandler(context).Read();
-        }
 
         [HttpGet]
         [Route("shopping_cart")]
         public IEnumerable<ShoppingСart> GetShoppingCart()
-        {
-            return new ShoppingCartHandler(context).Read();
-        }
 
         [HttpPost]
         [Route("shopping_cart/{id}")]
-        public void PostShoppingCart(int id)
-        {
-            new ShoppingCartHandler(context).Post(id);
-        }*/
+        public void PostShoppingCart(int id)*/
         #endregion
 
 
@@ -175,12 +146,12 @@ namespace backend.Controllers
             return new Read(context).ReadRow<Product>();
         }
 
-        [HttpGet]
+        /*[HttpGet]
         [Route("Tets_Get_Product_By_Id")]
         public IEnumerable<Product> Test(int id)
         {
             return new Read(context).ReadRow<Product>(id);
-        }
+        }*/
 
         [HttpGet]
         [Route("Tets_Get_Product_By_Name")]
@@ -194,14 +165,6 @@ namespace backend.Controllers
         public void Test2(Product product)
         {
             new Create(context).CreateRow<Product>(product);
-        }
-
-
-        [HttpDelete]
-        [Route("Tets_Delete_Product_By_Id")]
-        public void Test3(int id)
-        {
-            new Delete(context).DeleteRow<Product>(id);
         }
     }
 }

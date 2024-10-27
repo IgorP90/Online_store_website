@@ -1,6 +1,7 @@
-FROM mcr.microsoft.com/mssql/server:2022-latest
+FROM microsoft/iis
+SHELL ["powershell"]
 
-# ENV ACCEPT_EULA=Y \
-# 'SA_PASSWORD'='1234' \
-# 'MSSQL_PID'='Developer'
-EXPOSE 1433:1433
+RUN Install-WindowsFeature NET-Framework-45-ASPNET ; \
+    Install-WindowsFeature Web-Asp-Net45
+
+EXPOSE 80

@@ -1,4 +1,6 @@
 ﻿using backend.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 
 namespace backend.CRUD
 {
@@ -12,6 +14,7 @@ namespace backend.CRUD
         {
             context.RemoveRange(context.Set<T>().Where(i => i.Id == id));
             context.SaveChanges();
+   
         }
     }
 }

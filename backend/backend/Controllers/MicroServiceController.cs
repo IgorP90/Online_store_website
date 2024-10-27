@@ -13,13 +13,13 @@ namespace backend.Controllers
 
         [HttpPost]
         [Route("TestKafka")]
-        public void TestKafka(Product product)
+        public void TestKafka(string message)
         {
             string topic = "order-events";
 
             Message<string, string> km = new Message<string, string>
             {
-                Value = product.Name
+                Value = message
             };
 
             producer.Produce(topic, km);

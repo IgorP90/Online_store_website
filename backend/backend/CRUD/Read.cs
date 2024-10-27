@@ -1,5 +1,6 @@
 ﻿using backend.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace backend.CRUD
 {
@@ -14,22 +15,14 @@ namespace backend.CRUD
             return context.Set<T>().ToList();
         }
 
-        public IEnumerable<T> ReadRow<T>(int id) where T : class, IId
+        public async Task<T> ReadRow<T>(int id) where T : class, IId
         {
-            return context.Set<T>().Where(i => i.Id == id);
+            return (await context.Set<T>().Where(i => i.Id == id).ToListAsync()).First();
         }
 
         public IEnumerable<T> ReadRow<T>(string name) where T : class, IName
         {
-            try
-            {
-                return context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10);
-            }
-            catch (Exception)
-            {
-
-                return null;
-            }  
+            return context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10); 
         }
 
         public IEnumerable<T> ReadRowByNarrowCategory<T>(string name) where T : class, INarrowCategory

@@ -34,16 +34,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Kafka-----------------
+
 ProducerConfig producerConfig = new ProducerConfig
 {
-    BootstrapServers = "host1:9092"
+    BootstrapServers = "localhost:9092"
 };
 
-IProducer<Null, string> producer = new ProducerBuilder<Null, string>(producerConfig).Build();
+using (IProducer<Null, string> producer = new ProducerBuilder<Null, string>(producerConfig).Build()) 
+{
+    producer.Produce("my-topic", new Message<Null, string> { Value = "a log message" });
+}
+
+//-----------------------------
+
+//builder.Services.AddScoped<IProducer<string, string>, Producer<string, string>;
 
 WebApplication app = builder.Build();
-
-//builder.Services.AddScoped<IProducer, String>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
