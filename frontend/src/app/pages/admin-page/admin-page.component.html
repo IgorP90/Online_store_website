@@ -1,0 +1,16 @@
+<app-navigation></app-navigation>
+
+<h3>Add Product</h3>
+
+<div class="inputs">
+    <form #myForm="ngForm"  (ngSubmit)="sendProduct(myForm)">
+        <input name="name" [(ngModel)]="product.name" type="text" placeholder="Введите название" [(ngModel)]="product.name">
+        <input name="description" [(ngModel)]="product.description" type="text" placeholder="Введите описание" [(ngModel)]="product.description">
+        <input name="price" required pattern="[0-9]{10}" [(ngModel)]="product.price" type="number" placeholder="Введите цену" [(ngModel)]="product.price">
+        <select class="narrow_category_name">
+            <option *ngFor="let narrowCategory of narrowCategories" [ngValue]="narrowCategory.name">{{narrowCategory.name}}</option>
+        </select> 
+        <input class="image_input" type="file" placeholder="Выберите изображение">
+        <input type="submit" [disabled]="myForm.invalid" value="Отправить">
+    </form>
+</div>

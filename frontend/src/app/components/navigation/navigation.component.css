@@ -11,6 +11,7 @@
     background-color: rgb(255, 0, 0, 0.02);
 }
 
+.admin,
 .to_home,
 .sign_in{
     width: 81px;

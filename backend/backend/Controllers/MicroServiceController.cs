@@ -1,4 +1,5 @@
-﻿using backend.Models;
+﻿using backend.Kafka;
+using backend.Models;
 using Confluent.Kafka;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,10 +9,17 @@ namespace backend.Controllers
     [Route("[Controller]")]
     public class MicroServiceController : ControllerBase
     {
-        private readonly IProducer<string, string> producer;
-        public MicroServiceController(IProducer<string, string> producer) => this.producer = producer;
+        //private readonly ProducerConfig producer;
 
         [HttpPost]
+        [Route("TestKafka")]
+        public void TestKafka(string topic , string message)
+        {
+            new KafkaProducer().SendMessageAsync(topic, message);
+            System.Diagnostics.Debug.WriteLine("ЁЁЁЁЁЁЁЁЁЁЁЁ!!!");
+        }
+
+        /*[HttpPost]
         [Route("TestKafka")]
         public void TestKafka(string message)
         {
@@ -23,6 +31,7 @@ namespace backend.Controllers
             };
 
             producer.Produce(topic, km);
-        }
+        }*/
+
     }
 }

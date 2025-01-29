@@ -103,3 +103,12 @@ G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\runtimes
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\runtimes\win-x86\native\vcruntime140.dll
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\runtimes\win-x86\native\zlib1.dll
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\runtimes\win-x86\native\zstd.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\StackExchange.Redis.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

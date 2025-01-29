@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Text.Json;
 using Confluent.Kafka;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace backend.Controllers
 {
@@ -15,21 +16,26 @@ namespace backend.Controllers
     public class HomeController : ControllerBase
     {
         private readonly Context context;
+        private readonly IDistributedCache cache;
 
-        public HomeController(Context context) => this.context = context;
+        public HomeController(Context context, IDistributedCache cache)
+        {
+            this.context = context;
+            this.cache = cache;
+        }
 
         [HttpGet]
         [Route("product")]
         public IEnumerable<Product> GetAllProducts()
         {
-            return new Read(context).ReadRow<Product>();
+            return new Read(context, cache).ReadRow<Product>();
         }
 
         [HttpGet]
         [Route("productById/{id}")]
         public async Task<ActionResult<Product>> GetProductById(int id)
         {
-            Product product = await new Read(context).ReadRow<Product>(id);
+            Product product = await new Read(context, cache).ReadRow<Product>(id);
 
             if (product.Id == id) return Ok(product);
             else return BadRequest("Not Found");
@@ -39,7 +45,7 @@ namespace backend.Controllers
         [Route("productByName/{name}")]
         public ActionResult<IEnumerable<Product>> GetProductByName(string name)
         {
-            IEnumerable<Product> products = new Read(context).ReadRow<Product>(name);
+            IEnumerable<Product> products = new Read(context, cache).ReadRow<Product>(name);
 
             if (products.Any()) return Ok(products);
             else return BadRequest("Not Found");   
@@ -49,28 +55,35 @@ namespace backend.Controllers
         [Route("narrow_category")]
         public IEnumerable<NarrowCategory> GetAllNarrowCategories()
         {
-            return new Read(context).ReadRow<NarrowCategory>();
+            return new Read(context, cache).ReadRow<NarrowCategory>();
         }
 
         [HttpGet]
         [Route("wide_category")]
         public IEnumerable<WideCategory> GetAllWideCategories()
         {
-            return new Read(context).ReadRow<WideCategory>();
+            return new Read(context, cache).ReadRow<WideCategory>();
         }
 
         [HttpGet]
         [Route("productsByNarrowCategory/{categoryName}")]
         public IEnumerable<Product> GetAllProductsByNarrowCategory(string categoryName)
         {
-            return new Read(context).ReadRowByNarrowCategory<Product>(categoryName);
+            return new Read(context, cache).ReadRowByNarrowCategory<Product>(categoryName);
         }
 
         [HttpGet]
-        [Route("productsByWideCategory/{categoryName}")]
+        [Route("productsByWideCategory/{categoryName}")] //-
         public IEnumerable<Product> GetAllProductsByWideCategory(string categoryName)
         {
-            return new Read(context).ReadRowByWideCategory<Product>(categoryName);
+            return new Read(context, cache).ReadRowByWideCategory<Product>(categoryName);
+        }
+
+        [HttpPost]
+        [Route("post_Product")]
+        public void PostProduct(Product product) 
+        {
+            new Create(context).CreateRow<Product>(product);
         }
 
         [HttpPut]
@@ -82,9 +95,16 @@ namespace backend.Controllers
 
         [HttpDelete]
         [Route("delete_Product")]
-        public void Delete(int id)
+        public void DeleteProduct(int id)
         {
             new Delete(context).DeleteRow<Product>(id);    
+        }
+
+        [HttpDelete]
+        [Route("delete_narrow_category")]
+        public void DeleteNarrowCategory(int id) //-
+        {
+            //new Delete(context).DeleteRow<NarrowCategory>(id);
         }
 
         #region //--------------------------------------------------------------------
@@ -143,7 +163,7 @@ namespace backend.Controllers
         [Route("Tets_Get_Products")]
         public IEnumerable<Product> Test()
         {
-            return new Read(context).ReadRow<Product>();
+            return new Read(context, cache).ReadRow<Product>();
         }
 
         /*[HttpGet]
@@ -157,14 +177,7 @@ namespace backend.Controllers
         [Route("Tets_Get_Product_By_Name")]
         public IEnumerable<Product> Test(string name)
         {
-            return new Read(context).ReadRow<Product>(name);
-        }
-
-        [HttpPost]
-        [Route("Tets_Post_Product")]
-        public void Test2(Product product)
-        {
-            new Create(context).CreateRow<Product>(product);
+            return new Read(context, cache).ReadRow<Product>(name);
         }
     }
 }

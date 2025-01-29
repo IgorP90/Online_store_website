@@ -93,10 +93,16 @@ namespace backend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("NarrowCategoryId")
+                    b.Property<int?>("NarrowCategoryId")
                         .HasColumnType("int");
 
                     b.Property<int>("NumberOfOrders")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrdertId")
                         .HasColumnType("int");
 
                     b.Property<float>("Price")
@@ -105,22 +111,32 @@ namespace backend.Migrations
                     b.Property<float>("Rating")
                         .HasColumnType("real");
 
+                    b.Property<int?>("ShoppingCartId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NarrowCategoryId");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ShoppingCartId");
 
                     b.ToTable("Products");
                 });
 
             modelBuilder.Entity("backend.Models.ShoppingСart", b =>
                 {
-                    b.Property<int>("ProductId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductId");
+                    b.HasKey("Id");
 
                     b.ToTable("ShoppingСart");
                 });
@@ -182,22 +198,21 @@ namespace backend.Migrations
                 {
                     b.HasOne("backend.Models.NarrowCategory", "NarrowCategory")
                         .WithMany("Products")
-                        .HasForeignKey("NarrowCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("NarrowCategoryId");
+
+                    b.HasOne("backend.Models.Order", "Order")
+                        .WithMany("Products")
+                        .HasForeignKey("OrderId");
+
+                    b.HasOne("backend.Models.ShoppingСart", "ShoppingCart")
+                        .WithMany("Product")
+                        .HasForeignKey("ShoppingCartId");
 
                     b.Navigation("NarrowCategory");
-                });
 
-            modelBuilder.Entity("backend.Models.ShoppingСart", b =>
-                {
-                    b.HasOne("backend.Models.Product", "Product")
-                        .WithOne("ShoppingCart")
-                        .HasForeignKey("backend.Models.ShoppingСart", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.Navigation("Order");
 
-                    b.Navigation("Product");
+                    b.Navigation("ShoppingCart");
                 });
 
             modelBuilder.Entity("backend.Models.NarrowCategory", b =>
@@ -205,10 +220,14 @@ namespace backend.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("backend.Models.Product", b =>
+            modelBuilder.Entity("backend.Models.Order", b =>
                 {
-                    b.Navigation("ShoppingCart")
-                        .IsRequired();
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("backend.Models.ShoppingСart", b =>
+                {
+                    b.Navigation("Product");
                 });
 #pragma warning restore 612, 618
         }

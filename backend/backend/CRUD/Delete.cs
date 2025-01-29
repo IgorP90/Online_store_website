@@ -10,7 +10,7 @@ namespace backend.CRUD
 
         public Delete(Context context) => this.context = context;
 
-        public void DeleteRow<T>(int id) where T : class, IId
+        public void DeleteRow<T>(int id) where T : class, IProduct
         {
             context.RemoveRange(context.Set<T>().Where(i => i.Id == id));
             context.SaveChanges();

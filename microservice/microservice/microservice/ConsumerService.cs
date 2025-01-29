@@ -6,7 +6,7 @@ namespace microservice.Microservice
 {
     public class ConsumerService
     { 
-        private readonly IConsumer<string, string> consumer;
+        /*private IConsumer<string, string> consumer;
         public ConsumerService(IConsumer<string, string> consumer) => this.consumer = consumer;
 
        
@@ -23,6 +23,6 @@ namespace microservice.Microservice
                 }
             }, cancellationToken);
             return Task.CompletedTask;
-        }
+        }*/
     }
 }

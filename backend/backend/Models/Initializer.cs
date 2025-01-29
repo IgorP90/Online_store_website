@@ -27,14 +27,14 @@ namespace backend.Models
                 foreach (WideCategory item in wideCategories) new Create(context).CreateRow<WideCategory>(item);
                 foreach (Product item in products) new Create(context).CreateRow<Product>(item);
 
-                foreach (Product product in products)
+                /*foreach (Product product in products)
                 {
                     foreach (var wideCategory in wideCategories)
                     {
                         wideCategory.Products.Add(product);
                         product.WideCategories.Add(wideCategory);                    
                     }
-                }
+                }*/
 
 
 
