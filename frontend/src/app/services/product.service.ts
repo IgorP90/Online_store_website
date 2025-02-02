@@ -25,4 +25,8 @@ export class ProductService{
     getProductByName(name:string):Observable<IProduct[]>{
         return this.http.get<IProduct[]>(this.connectionString + '/productByName/' + name)
     }
+
+    postProduct(product:IProduct):Observable<IProduct>{
+        return this.http.post<IProduct>(this.connectionString + '/post_Product', product)
+    }
 }

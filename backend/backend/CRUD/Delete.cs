@@ -1,4 +1,5 @@
 ﻿using backend.Models;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace backend.CRUD
 {
@@ -8,10 +9,20 @@ namespace backend.CRUD
 
         public Delete(Context context) => this.context = context;
 
-        public void DeleteRow<T>(int id) where T : class, IId
+        public void DeleteRow<T>(int id) where T : class, IProduct
         {
-            context.RemoveRange(context.Set<T>().Where(i => i.Id == id));
-            context.SaveChanges();
+            using IDbContextTransaction transaction = context.Database.BeginTransaction();
+
+            try
+            {
+                context.RemoveRange(context.Set<T>().Find(id));
+                context.SaveChanges();
+                transaction.Commit();
+            }
+            catch (Exception)
+            {
+                transaction.Rollback();
+            }  
         }
     }
 }

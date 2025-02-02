@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\widecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\widecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\shopping\u0441art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\shopping\u0441art.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\jsondeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\jsondeserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +31,36 @@
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\read.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\crud\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\crud\\create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\narrowcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\jsons\\widecategories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\jsons\\widecategories.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|g:\\myvisualstudio\\online_store_website\\backend\\backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1978F3F6-C528-460E-A542-7C355B61AF49}|backend\\backend.csproj|solutionrelative:backend\\jsons\\product.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,87 +70,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 247,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Context.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Context.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Context.cs",
               "RelativeToolTip": "backend\\Models\\Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-12T16:39:22.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "backend\\Controllers\\HomeController.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Controllers\\HomeController.cs",
               "RelativeToolTip": "backend\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwEAAAABUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T17:45:41.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "backend\\Program.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
-              "RelativeToolTip": "backend\\Program.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T11:35:32.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Initializer.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Initializer.cs",
               "RelativeDocumentMoniker": "backend\\Models\\Initializer.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Initializer.cs",
               "RelativeToolTip": "backend\\Models\\Initializer.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T19:31:58.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WideCategories.json",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
-              "RelativeDocumentMoniker": "backend\\JSONs\\WideCategories.json",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
-              "RelativeToolTip": "backend\\JSONs\\WideCategories.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-11T19:29:25.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Product.json",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
-              "RelativeDocumentMoniker": "backend\\JSONs\\Product.json",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
-              "RelativeToolTip": "backend\\JSONs\\Product.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-11T19:29:05.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "NarrowCategory.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\NarrowCategory.cs",
               "RelativeDocumentMoniker": "backend\\Models\\NarrowCategory.cs",
@@ -147,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WideCategory.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\WideCategory.cs",
               "RelativeDocumentMoniker": "backend\\Models\\WideCategory.cs",
@@ -160,28 +139,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "backend\\Models\\Product.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
-              "RelativeToolTip": "backend\\Models\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T17:49:48.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Create.cs",
               "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Create.cs",
               "RelativeDocumentMoniker": "backend\\CRUD\\Create.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Create.cs",
               "RelativeToolTip": "backend\\CRUD\\Create.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T20:06:13.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Delete.cs",
+              "RelativeDocumentMoniker": "backend\\CRUD\\Delete.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Delete.cs",
+              "RelativeToolTip": "backend\\CRUD\\Delete.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:36:40.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T11:35:32.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-02T15:03:28.506Z",
               "EditorCaption": ""
             },
             {
@@ -192,9 +197,74 @@
               "RelativeDocumentMoniker": "backend\\CRUD\\Read.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\CRUD\\Read.cs",
               "RelativeToolTip": "backend\\CRUD\\Read.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCUAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAABiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T20:07:20.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shopping\u0421art.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Shopping\u0421art.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Shopping\u0421art.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Shopping\u0421art.cs",
+              "RelativeToolTip": "backend\\Models\\Shopping\u0421art.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T14:49:12.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JSONDeserializer.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\JSONDeserializer.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\JSONDeserializer.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\JSONDeserializer.cs",
+              "RelativeToolTip": "backend\\Models\\JSONDeserializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T15:02:27.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Product.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Product.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\Models\\Product.cs",
+              "RelativeToolTip": "backend\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T17:49:48.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Product.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
+              "RelativeDocumentMoniker": "backend\\JSONs\\Product.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\Product.json",
+              "RelativeToolTip": "backend\\JSONs\\Product.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T19:29:05.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WideCategories.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
+              "RelativeDocumentMoniker": "backend\\JSONs\\WideCategories.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\backend\\backend\\JSONs\\WideCategories.json",
+              "RelativeToolTip": "backend\\JSONs\\WideCategories.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T19:29:25.632Z",
               "EditorCaption": ""
             }
           ]

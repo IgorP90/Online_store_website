@@ -1,30 +1,23 @@
-using backend.CRUD;
 using backend.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
-
-
-
 // Add services to the container.
-
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
+        policy.WithOrigins("http://localhost:3333").AllowAnyMethod().AllowAnyHeader();
         policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
     });
 });
 
-string connection = builder.Configuration.GetConnectionString("MSSQLConfig");
-// добавляем контекст ApplicationContext в качестве сервиса в приложение
 builder.Services.AddDbContext<Context>(options =>
-    options.UseSqlServer(connection));
+{
+    string connection = builder.Configuration.GetConnectionString("MSSQLConfig");
+    options.UseSqlServer(connection);
+});
 
 builder.Services.AddControllersWithViews();
 
@@ -33,7 +26,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-WebApplication app = builder.Build();  
+//Redis-------------------
+builder.Services.AddStackExchangeRedisCache(options => {
+    string connection = builder.Configuration.GetConnectionString("RedisConfig");
+    options.Configuration = connection;
+});
+
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -46,6 +46,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.8, )"
@@ -56,9 +64,17 @@
               "target": "Package",
               "version": "[7.0.8, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.3, )"
             }
           },
           "imports": [

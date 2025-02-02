@@ -1,7 +1,4 @@
-﻿using backend.CRUD;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace backend.Models
 {

@@ -1,40 +1,63 @@
 ﻿using backend.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.IdentityModel.Tokens;
+using System.Text.Json;
 
 namespace backend.CRUD
 {
     public class Read
     {
         private readonly Context context;
+        private readonly IDistributedCache cache;
 
-        public Read(Context context) => this.context = context;
-
-        public IEnumerable<T> ReadRow<T>() where T : class
+        public Read(Context context, IDistributedCache cache)
         {
-            return context.Set<T>().ToList();
+            this.context = context;
+            this.cache = cache;
         }
 
-        public IEnumerable<T> ReadRow<T>(int id) where T : class, IId
+        public async Task<IEnumerable<T>> ReadRow<T>() where T : class
         {
-            return context.Set<T>().Where(i => i.Id == id);
+            return await context.Set<T>().ToListAsync();
         }
 
-        public IEnumerable<T> ReadRow<T>(string name) where T : class, IName
+        public async Task<IProduct> ReadRow<T>(int id) where T : class, IProduct
         {
             try
             {
-                return context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10);
+                string searchResult = cache.GetString(id.ToString());
+                if (searchResult.IsNullOrEmpty())
+                {
+                    T data = await context.Set<T>().FindAsync(id);
+                    searchResult = JsonSerializer.Serialize(data);
+                    cache.SetStringAsync(data.Id.ToString(), searchResult, new DistributedCacheEntryOptions
+                    {
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                    });
+                    return data;
+                }
+                return JsonSerializer.Deserialize<T>(searchResult);
             }
-            catch (Exception)
+            catch
             {
-
-                return null;
-            }  
+                return await context.Set<T>().FindAsync(id);
+            }
         }
 
-        public IEnumerable<T> ReadRowByNarrowCategory<T>(string name) where T : class, INarrowCategory
+        public async Task<IEnumerable<T>> ReadRow<T>(string name) where T : class, IProduct
         {
-            return context.Set<T>().Where(n => n.NarrowCategory.Name == name);
+            return await context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10).ToListAsync(); 
+        }
+
+        public async Task<IEnumerable<T>> ReadRowByNarrowCategory<T>(string name) where T : class, INarrowCategory
+        {
+            return await context.Set<T>().Where(n => n.NarrowCategory.Name == name).ToListAsync();
+        }
+
+        public IEnumerable<T> ReadRowByWideCategory<T>(string name) where T : class, IProduct, IWideCategory
+        {
+            return context.Set<T>().Include(a => a.WideCategories);
         }
     }
 }

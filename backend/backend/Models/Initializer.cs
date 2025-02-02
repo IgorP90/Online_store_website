@@ -9,6 +9,7 @@ namespace backend.Models
             using (IServiceScope scope = app.Services.CreateScope())
             {
                 using Context context = scope.ServiceProvider.GetRequiredService<Context>();
+
                 try
                 {
                     context.Database.EnsureDeleted();
@@ -26,17 +27,6 @@ namespace backend.Models
                 foreach (NarrowCategory item in narrowCategories) new Create(context).CreateRow<NarrowCategory>(item);
                 foreach (WideCategory item in wideCategories) new Create(context).CreateRow<WideCategory>(item);
                 foreach (Product item in products) new Create(context).CreateRow<Product>(item);
-
-                foreach (Product product in products)
-                {
-                    foreach (var wideCategory in wideCategories)
-                    {
-                        wideCategory.Products.Add(product);
-                        product.WideCategories.Add(wideCategory);                    
-                    }
-                }
-
-
 
                 return app;
             }
