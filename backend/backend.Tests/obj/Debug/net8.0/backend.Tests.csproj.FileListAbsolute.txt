@@ -1,0 +1,6 @@
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.csproj.AssemblyReference.cache
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.GeneratedMSBuildEditorConfig.editorconfig
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.AssemblyInfoInputs.cache
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.AssemblyInfo.cs
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.csproj.CoreCompileInputs.cache
+G:\MyVisualStudio\Online_store_website\backend\backend.Tests\obj\Debug\net8.0\backend.Tests.sourcelink.json

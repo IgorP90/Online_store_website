@@ -8,6 +8,8 @@ using System.Text.Json;
 using Confluent.Kafka;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Caching.Distributed;
+using exMethod;
+using static Confluent.Kafka.ConfigPropertyNames;
 
 namespace backend.Controllers
 {
@@ -26,50 +28,50 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("product")]
-        public IEnumerable<Product> GetAllProducts()
+        public async Task<ActionResult<IEnumerable<IProduct>>> GetAllProducts()
         {
-            return new Read(context, cache).ReadRow<Product>();
+            IEnumerable<IProduct> products = await new Read(context, cache).ReadRow<Product>();
+            if (products.IsNullOrEmpty()) return BadRequest("Not Found");
+            return Ok(products);
         }
-
         [HttpGet]
         [Route("productById/{id}")]
-        public async Task<ActionResult<Product>> GetProductById(int id)
+        public async Task<ActionResult<IProduct>> GetProductById(int id)
         {
-            Product product = await new Read(context, cache).ReadRow<Product>(id);
-
-            if (product.Id == id) return Ok(product);
-            else return BadRequest("Not Found");
+            IProduct product = await new Read(context, cache).ReadRow<Product>(id);
+            if (product == null) return BadRequest("Not Found");
+            return Ok(product);
         }
 
         [HttpGet]
         [Route("productByName/{name}")]
-        public ActionResult<IEnumerable<Product>> GetProductByName(string name)
+        public async Task<ActionResult<IEnumerable<Product>>> GetProductByName(string name)
         {
-            IEnumerable<Product> products = new Read(context, cache).ReadRow<Product>(name);
+            IEnumerable<Product> products = await new Read(context, cache).ReadRow<Product>(name);
 
-            if (products.Any()) return Ok(products);
-            else return BadRequest("Not Found");   
+            if(products.IsNullOrEmpty()) return BadRequest("Not Found");
+            return Ok(products);
         }
 
         [HttpGet]
         [Route("narrow_category")]
-        public IEnumerable<NarrowCategory> GetAllNarrowCategories()
+        public async Task<IEnumerable<NarrowCategory>> GetAllNarrowCategories()
         {
-            return new Read(context, cache).ReadRow<NarrowCategory>();
+            return await new Read(context, cache).ReadRow<NarrowCategory>();
         }
 
         [HttpGet]
         [Route("wide_category")]
-        public IEnumerable<WideCategory> GetAllWideCategories()
+        public async Task<IEnumerable<WideCategory>> GetAllWideCategories()
         {
-            return new Read(context, cache).ReadRow<WideCategory>();
+            return await new Read(context, cache).ReadRow<WideCategory>();
         }
 
         [HttpGet]
         [Route("productsByNarrowCategory/{categoryName}")]
-        public IEnumerable<Product> GetAllProductsByNarrowCategory(string categoryName)
+        public async Task<IEnumerable<Product>> GetAllProductsByNarrowCategory(string categoryName)
         {
-            return new Read(context, cache).ReadRowByNarrowCategory<Product>(categoryName);
+            return await new Read(context, cache).ReadRowByNarrowCategory<Product>(categoryName);
         }
 
         [HttpGet]
@@ -81,9 +83,10 @@ namespace backend.Controllers
 
         [HttpPost]
         [Route("post_Product")]
-        public void PostProduct(Product product) 
+        public async Task<ActionResult> PostProduct(Product product) //-
         {
-            new Create(context).CreateRow<Product>(product);
+            await new Create(context).CreateRow<Product>(product);
+            return Ok();
         }
 
         [HttpPut]
@@ -95,9 +98,10 @@ namespace backend.Controllers
 
         [HttpDelete]
         [Route("delete_Product")]
-        public void DeleteProduct(int id)
+        public ActionResult DeleteProduct(int id)
         {
-            new Delete(context).DeleteRow<Product>(id);    
+            new Delete(context).DeleteRow<Product>(id);
+            return Ok();
         }
 
         [HttpDelete]
@@ -161,9 +165,9 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("Tets_Get_Products")]
-        public IEnumerable<Product> Test()
+        public async Task<IEnumerable<Product>> Test()
         {
-            return new Read(context, cache).ReadRow<Product>();
+            return await new Read(context, cache).ReadRow<Product>();
         }
 
         /*[HttpGet]
@@ -175,9 +179,9 @@ namespace backend.Controllers
 
         [HttpGet]
         [Route("Tets_Get_Product_By_Name")]
-        public IEnumerable<Product> Test(string name)
+        public async Task<IEnumerable<Product>> Test(string name)
         {
-            return new Read(context, cache).ReadRow<Product>(name);
+            return await new Read(context, cache).ReadRow<Product>(name);
         }
     }
 }

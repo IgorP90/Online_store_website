@@ -17,20 +17,19 @@ namespace backend.CRUD
             this.cache = cache;
         }
 
-        public IEnumerable<T> ReadRow<T>() where T : class
+        public async Task<IEnumerable<T>> ReadRow<T>() where T : class
         {
-            return context.Set<T>().ToList();
+            return await context.Set<T>().ToListAsync();
         }
 
-        public async Task<T> ReadRow<T>(int id) where T : class, IProduct
+        public async Task<IProduct> ReadRow<T>(int id) where T : class, IProduct
         {
             try
             {
                 string searchResult = cache.GetString(id.ToString());
                 if (searchResult.IsNullOrEmpty())
                 {
-                    Thread.Sleep(2000);
-                    T data = context.Set<T>().Where(i => i.Id == id).ToList().First();
+                    T data = await context.Set<T>().FindAsync(id);
                     searchResult = JsonSerializer.Serialize(data);
                     cache.SetStringAsync(data.Id.ToString(), searchResult, new DistributedCacheEntryOptions
                     {
@@ -42,18 +41,18 @@ namespace backend.CRUD
             }
             catch
             {
-                return context.Set<T>().Where(i => i.Id == id).ToList().First();
+                return await context.Set<T>().FindAsync(id);
             }
         }
 
-        public IEnumerable<T> ReadRow<T>(string name) where T : class, IProduct
+        public async Task<IEnumerable<T>> ReadRow<T>(string name) where T : class, IProduct
         {
-            return context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10); 
+            return await context.Set<T>().Where(n => EF.Functions.Like(n.Name, $"%{name}%")).Take(10).ToListAsync(); 
         }
 
-        public IEnumerable<T> ReadRowByNarrowCategory<T>(string name) where T : class, INarrowCategory
+        public async Task<IEnumerable<T>> ReadRowByNarrowCategory<T>(string name) where T : class, INarrowCategory
         {
-            return context.Set<T>().Where(n => n.NarrowCategory.Name == name);
+            return await context.Set<T>().Where(n => n.NarrowCategory.Name == name).ToListAsync();
         }
 
         public IEnumerable<T> ReadRowByWideCategory<T>(string name) where T : class, IProduct, IWideCategory

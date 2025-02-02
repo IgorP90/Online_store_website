@@ -112,3 +112,7 @@ G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Microsof
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\StackExchange.Redis.dll
 G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\xunit.abstractions.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\xunit.assert.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\xunit.core.dll
+G:\MyVisualStudio\Online_store_website\backend\backend\bin\Debug\net8.0\xunit.execution.dotnet.dll

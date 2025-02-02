@@ -44,8 +44,12 @@ builder.Services.AddSwaggerGen();
 
 /*ProducerConfig producerConfig = new ProducerConfig
 {
-    BootstrapServers = builder.Configuration.GetConnectionString("KafkaConfig")
+    BootstrapServers = builder.Configuration.GetConnectionString("KafkaConfig"),
+    AllowAutoCreateTopics = true,
+    Acks = Acks.All
 };*/
+
+//builder.Services.AddTransient<IKafkaProducer, KafkaProducer>();
 
 /*using (IProducer<Null, string> producer = new ProducerBuilder<Null, string>(producerConfig).Build()) 
 {

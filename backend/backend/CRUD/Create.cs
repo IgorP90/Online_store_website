@@ -10,7 +10,7 @@ namespace backend.CRUD
 
         public Create(Context context) => this.context = context;
 
-        public void CreateRow <T> (T model) where T : class
+        public async Task CreateRow <T> (T model) where T : class
         {
             try
             {

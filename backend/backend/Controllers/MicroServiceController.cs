@@ -9,29 +9,14 @@ namespace backend.Controllers
     [Route("[Controller]")]
     public class MicroServiceController : ControllerBase
     {
-        //private readonly ProducerConfig producer;
+        private readonly ProducerConfig producerConfig;
 
         [HttpPost]
         [Route("TestKafka")]
-        public void TestKafka(string topic , string message)
+        public ActionResult TestKafka(string topic , string message)
         {
-            new KafkaProducer().SendMessageAsync(topic, message);
-            System.Diagnostics.Debug.WriteLine("ЁЁЁЁЁЁЁЁЁЁЁЁ!!!");
+            new KafkaProducer(producerConfig).SendMessageAsync(topic, message);
+            return Ok("Kafka Done!");    
         }
-
-        /*[HttpPost]
-        [Route("TestKafka")]
-        public void TestKafka(string message)
-        {
-            string topic = "order-events";
-
-            Message<string, string> km = new Message<string, string>
-            {
-                Value = message
-            };
-
-            producer.Produce(topic, km);
-        }*/
-
     }
 }
