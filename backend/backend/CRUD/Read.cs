@@ -29,11 +29,12 @@ namespace backend.CRUD
                 string searchResult = cache.GetString(id.ToString());
                 if (searchResult.IsNullOrEmpty())
                 {
+                    Thread.Sleep(5000);
                     T data = await context.Set<T>().FindAsync(id);
                     searchResult = JsonSerializer.Serialize(data);
                     cache.SetStringAsync(data.Id.ToString(), searchResult, new DistributedCacheEntryOptions
                     {
-                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(1)
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(0.5)
                     });
                     return data;
                 }

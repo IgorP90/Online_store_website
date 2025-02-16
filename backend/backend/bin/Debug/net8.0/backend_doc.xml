@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>backend</name>
+    </assembly>
+    <members>
+        <member name="T:backend.Controllers.HomeController">
+            <summary>
+            API Controller
+            </summary>
+        </member>
+        <member name="M:backend.Controllers.HomeController.#ctor(backend.Models.Context,Microsoft.Extensions.Caching.Distributed.IDistributedCache)">
+            <summary>
+            Constructor for HomeController class
+            </summary>
+            <param name="context">DBContext configuration class</param>
+            <param name="cache">Redis configuration class</param>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetAllProducts">
+            <summary>
+            Getting the entire list of products from the database
+            </summary>
+            <returns>List of products and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetProductById(System.Int32)">
+            <summary>
+            Getting product by id
+            </summary>
+            <param name="id">Product id</param>
+            <returns>The product and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetProductByName(System.String)">
+            <summary>
+            Getting product by name. Used in the search bar on the home page of the website
+            </summary>
+            <param name="name">The name of the product in whole or in part</param>
+            <returns>List of products found and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetAllNarrowCategories">
+            <summary>
+            Getting the entire list of narrow categories
+            </summary>
+            <returns>List of narrow categories and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetAllWideCategories">
+            <summary>
+            Getting the entire list of wide categories
+            </summary>
+            <returns>List of wide categories and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetAllProductsByNarrowCategory(System.String)">
+            <summary>
+            Selecting a list of products by narrow category name
+            </summary>
+            <param name="categoryName">Narrow category name</param>
+            <returns>List of products and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.GetAllProductsByWideCategory(System.String)">
+            <summary>
+            Selecting a list of products by wide category name
+            </summary>
+            <param name="categoryName">Wide category name</param>
+            <returns>List of products and response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.PostProduct(backend.Models.Product)">
+            <summary>
+            Creating a new product record in the database
+            </summary>
+            <param name="product">Product</param>
+            <returns>Response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.UpdateProduct(backend.Models.Product)">
+            <summary>
+            Changing an existing product record in the database
+            </summary>
+            <param name="product">Product</param>
+        </member>
+        <member name="M:backend.Controllers.HomeController.DeleteProduct(System.Int32)">
+            <summary>
+            Deleting a product record from the database
+            </summary>
+            <param name="id">Product id</param>
+            <returns>Response status codes</returns>
+        </member>
+        <member name="M:backend.Controllers.HomeController.DeleteNarrowCategory(System.Int32)">
+            <summary>
+            Deleting a narrow category record from the database
+            </summary>
+            <param name="id">Narrow_category id</param>
+        </member>
+        <member name="T:backend.Kafka.KafkaProducer">
+            <summary>
+            Kafka Producer Class
+            </summary>
+        </member>
+        <member name="M:backend.Kafka.KafkaProducer.#ctor(Confluent.Kafka.ProducerConfig)">
+            <summary>
+            
+            </summary>
+            <param name="producerConfig"></param>
+        </member>
+        <member name="M:backend.Kafka.KafkaProducer.SendMessageAsync(System.String,System.String)">
+            <summary>
+            Asynchronous message sending
+            </summary>
+            <param name="topic">message topic</param>
+            <param name="message">message object</param>
+        </member>
+        <member name="T:backend.Migrations.migration_1">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:backend.Migrations.migration_2">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:backend.Migrations.migration_3">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:backend.Migrations.migration_4">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_4.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_4.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:backend.Migrations.migration_5">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_5.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_5.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:backend.Migrations.migration_5.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -6,17 +6,29 @@ using System.Diagnostics;
 
 namespace backend.Kafka
 {
+    /// <summary>
+    /// Kafka Producer Class
+    /// </summary>
     public class KafkaProducer : IKafkaProducer
     {
         private readonly ProducerConfig producerConfig;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="producerConfig"></param>
         public KafkaProducer(ProducerConfig producerConfig) => this.producerConfig = producerConfig;
 
+        /// <summary>
+        /// Asynchronous message sending
+        /// </summary>
+        /// <param name="topic">message topic</param>
+        /// <param name="message">message object</param>
         public async Task SendMessageAsync(string topic, string message)
         {
 
             ProducerConfig config = new ProducerConfig
             {
-                BootstrapServers = "localhost:8888",
+                BootstrapServers = "localhost:9092",
                 AllowAutoCreateTopics = true,
                 Acks = Acks.All
             };

@@ -7,20 +7,40 @@
       "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\kafka\\kafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\kafka\\ikafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\kafka\\ikafkaconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\initializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\testdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\testdi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\microservice\\consumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\microservice\\consumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\idbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\idbhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\crudhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\crudhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|g:\\myvisualstudio\\online_store_website\\microservice\\microservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{128D4085-404C-4AF7-A604-3FDF45C4B897}|microservice\\microservice.csproj|solutionrelative:microservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,45 +50,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 247,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Program.cs",
-              "RelativeDocumentMoniker": "microservice\\Program.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Program.cs",
-              "RelativeToolTip": "microservice\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABAAAAA",
+              "Title": "Account.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\Account.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Account.cs",
+              "RelativeToolTip": "microservice\\Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T11:35:33.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TestDI.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\TestDI.cs",
-              "RelativeDocumentMoniker": "microservice\\TestDI.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\TestDI.cs",
-              "RelativeToolTip": "microservice\\TestDI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T18:00:37.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IKafkaConsumer.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Kafka\\IKafkaConsumer.cs",
-              "RelativeDocumentMoniker": "microservice\\Kafka\\IKafkaConsumer.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Kafka\\IKafkaConsumer.cs",
-              "RelativeToolTip": "microservice\\Kafka\\IKafkaConsumer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T11:26:41.335Z",
+              "WhenOpened": "2025-02-16T21:18:02.474Z",
               "EditorCaption": ""
             },
             {
@@ -79,22 +73,111 @@
               "RelativeDocumentMoniker": "microservice\\Kafka\\KafkaConsumer.cs",
               "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Kafka\\KafkaConsumer.cs",
               "RelativeToolTip": "microservice\\Kafka\\KafkaConsumer.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwCUAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:51:57.171Z",
+              "WhenOpened": "2025-02-15T19:23:54.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Context.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\Context.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Context.cs",
+              "RelativeToolTip": "microservice\\Models\\Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T17:05:39.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\User.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\User.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\User.cs",
+              "RelativeToolTip": "microservice\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T21:43:32.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IDBHandler.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\IDBHandler.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\IDBHandler.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\IDBHandler.cs",
+              "RelativeToolTip": "microservice\\Models\\IDBHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T14:13:13.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CRUDHandler.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\CRUDHandler.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\CRUDHandler.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\CRUDHandler.cs",
+              "RelativeToolTip": "microservice\\Models\\CRUDHandler.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T14:12:27.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Program.cs",
+              "RelativeDocumentMoniker": "microservice\\Program.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Program.cs",
+              "RelativeToolTip": "microservice\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:27:01.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ConsumerService.cs",
-              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\microservice\\ConsumerService.cs",
-              "RelativeDocumentMoniker": "microservice\\microservice\\ConsumerService.cs",
-              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\microservice\\ConsumerService.cs",
-              "RelativeToolTip": "microservice\\microservice\\ConsumerService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "microservice\\Controllers\\AuthController.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "microservice\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T12:18:11.722Z",
+              "WhenOpened": "2025-02-13T13:29:10.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\appsettings.json",
+              "RelativeDocumentMoniker": "microservice\\appsettings.json",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\appsettings.json",
+              "RelativeToolTip": "microservice\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-12T15:56:18.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Initializer.cs",
+              "DocumentMoniker": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Initializer.cs",
+              "RelativeDocumentMoniker": "microservice\\Models\\Initializer.cs",
+              "ToolTip": "G:\\MyVisualStudio\\Online_store_website\\microservice\\microservice\\Models\\Initializer.cs",
+              "RelativeToolTip": "microservice\\Models\\Initializer.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwEIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:55:40.209Z",
               "EditorCaption": ""
             }
           ]

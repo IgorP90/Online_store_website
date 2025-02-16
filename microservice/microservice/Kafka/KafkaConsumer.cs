@@ -16,22 +16,21 @@ namespace microservice.Kafka
         //const string groupId = "test_group";
         //const string bootstrapServers = "localhost:9092";
 
-        public IConsumer<Null, string> consumer;
+        private IConsumer<Null, string> consumer;
 
         public KafkaConsumer() 
         {
-            System.Diagnostics.Debug.WriteLine("KafkaConsumer ++++++++++++++++++++++");
-        }
-
-        public async Task ConsumeMessages(string topic)
-        {
             var config = new ConsumerConfig
             {
-                BootstrapServers = "localhost:8888",
+                BootstrapServers = "localhost:9092",
                 GroupId = "test_group",
                 AutoOffsetReset = AutoOffsetReset.Earliest
             };
             consumer = new ConsumerBuilder<Null, string>(config).Build();
+        }
+
+        public async Task ConsumeMessages(string topic)
+        {
             consumer.Subscribe(topic);
 
             await Task.Run(() =>
@@ -41,7 +40,6 @@ namespace microservice.Kafka
                     while (true)
                     {
                         var res = consumer.Consume();
-                        System.Diagnostics.Debug.WriteLine("ConsumeConsumeConsumeConsumeConsumeConsume");
                         System.Diagnostics.Debug.WriteLine(res.Value);
                     }
                 }
@@ -51,9 +49,7 @@ namespace microservice.Kafka
                     throw;
                 }
                 
-            });
-
-            
+            });         
         }
 
         /*protected override Task ExecuteAsync(CancellationToken stoppingToken)

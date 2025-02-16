@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>microservice</name>
+    </assembly>
+    <members>
+        <member name="T:microservice.Models.Initializer">
+            <summary>
+            User Database Initialization Class
+            </summary>
+        </member>
+        <member name="M:microservice.Models.Initializer.#ctor(System.String)">
+            <summary>
+            Initializer class constructor
+            </summary>
+            <param name="connectionString">Database connection string</param>
+        </member>
+        <member name="M:microservice.Models.Initializer.InitializeDb">
+            <summary>
+            Creates a user database and table. Used Dapper
+            </summary>
+        </member>
+    </members>
+</doc>
